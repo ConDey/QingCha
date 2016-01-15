@@ -13,4 +13,6 @@
 
 @interface UICommonViewController : UIViewController
 
+@property (nonatomic,retain) UITableView *tableview; 
+
 @end

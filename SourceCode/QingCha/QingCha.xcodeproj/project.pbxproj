@@ -13,6 +13,7 @@
 		D58717721C4354270003C2B8 /* Root_Iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58717711C4354270003C2B8 /* Root_Iphone.storyboard */; };
 		D587177F1C4376DA0003C2B8 /* UICommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D587177E1C4376DA0003C2B8 /* UICommonViewController.m */; };
 		D58717821C43773F0003C2B8 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58717811C43773F0003C2B8 /* HomePageViewController.m */; };
+		D5D62A081C48CC620036915F /* HomePageGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A071C48CC620036915F /* HomePageGuideView.m */; };
 		F60A685D7BDAEDCC60A58432 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F94406E8726717E950A2587 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		D587177E1C4376DA0003C2B8 /* UICommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UICommonViewController.m; path = Classes/Common/UIViewController/UICommonViewController.m; sourceTree = "<group>"; };
 		D58717801C43773F0003C2B8 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageViewController.h; path = Classes/Src/HomePage/HomePageViewController.h; sourceTree = "<group>"; };
 		D58717811C43773F0003C2B8 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageViewController.m; path = Classes/Src/HomePage/HomePageViewController.m; sourceTree = "<group>"; };
+		D5D62A061C48CC620036915F /* HomePageGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomePageGuideView.h; path = Classes/Src/HomePage/HomePageGuideView.h; sourceTree = "<group>"; };
+		D5D62A071C48CC620036915F /* HomePageGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageGuideView.m; path = Classes/Src/HomePage/HomePageGuideView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 		D58717731C43560C0003C2B8 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62A051C48C6E40036915F /* View */,
 				D58717751C4356D00003C2B8 /* Controller */,
 			);
 			name = HomePage;
@@ -183,6 +187,15 @@
 				D58717811C43773F0003C2B8 /* HomePageViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D5D62A051C48C6E40036915F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62A061C48CC620036915F /* HomePageGuideView.h */,
+				D5D62A071C48CC620036915F /* HomePageGuideView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +322,7 @@
 				D58717821C43773F0003C2B8 /* HomePageViewController.m in Sources */,
 				D58717701C43541C0003C2B8 /* AppDelegate.m in Sources */,
 				D58717521C4335570003C2B8 /* main.m in Sources */,
+				D5D62A081C48CC620036915F /* HomePageGuideView.m in Sources */,
 				D587177F1C4376DA0003C2B8 /* UICommonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
