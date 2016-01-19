@@ -5,12 +5,10 @@
 //  Created by eazytec on 16/1/11.
 //  Copyright © 2016年 QingCha. All rights reserved.
 //
-
-#import "UICommonViewController.h"
-
+#import <UIKit/UIKit.h>
 
 // QingCha 首页
 
-@interface HomePageViewController : UICommonViewController
+@interface HomePageViewController : UICommonViewController<UITableViewDelegate, UITableViewDataSource>
 
 @end

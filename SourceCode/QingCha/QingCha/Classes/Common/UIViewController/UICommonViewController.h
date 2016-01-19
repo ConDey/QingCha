@@ -13,6 +13,8 @@
 
 @interface UICommonViewController : UIViewController
 
-@property (nonatomic,retain) UITableView *tableview; 
+@property (nonatomic,retain) UITableView *tableview;
+
+@property (nonatomic,assign) BOOL isNavBarShow; // NavBar是否存在,默认存在
 
 @end

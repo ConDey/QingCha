@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- *  HomePageGuideViewDelegate: 首页导航菜单
- */
+//  首页导航菜单
+
 @interface HomePageGuideView : UIView
 
 @property (nonatomic,retain) UIImageView *logoImageView;
-
 @property (nonatomic,retain) UISegmentedControl *segmentedControl; // 导航菜单标题
 
 // 初始化方法

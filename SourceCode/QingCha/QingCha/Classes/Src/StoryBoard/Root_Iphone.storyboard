@@ -25,7 +25,7 @@
         <!--HomePage Controller-->
         <scene sceneID="qeh-Xd-vkU">
             <objects>
-                <viewController title="HomePage Controller" id="Tsd-5g-CgT" sceneMemberID="viewController">
+                <viewController title="HomePage Controller" id="Tsd-5g-CgT" customClass="HomePageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sZM-Cx-ANS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
