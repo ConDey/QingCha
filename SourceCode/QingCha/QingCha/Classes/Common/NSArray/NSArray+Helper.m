@@ -12,7 +12,7 @@
 
 + (BOOL)isArrayNull :(NSArray *)array {
     
-    if(array == nil  || (NSNull *)array == [NSNull null]){
+    if(array == nil  || [(NSNull *)array isEqual:([NSNull null])] ){
         return true;
     }
     return false;

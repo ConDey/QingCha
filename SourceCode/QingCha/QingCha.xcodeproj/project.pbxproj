@@ -19,7 +19,20 @@
 		D5D62A231C4E15500036915F /* NSArray+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A221C4E15500036915F /* NSArray+Helper.m */; };
 		D5D62A2A1C4E18120036915F /* QCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A291C4E18120036915F /* QCModel.m */; };
 		D5D62A2D1C4E1EFD0036915F /* QCArtifact.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A2C1C4E1EFD0036915F /* QCArtifact.m */; };
-		D5D62A321C4E22690036915F /* ElectedViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A311C4E22690036915F /* ElectedViewCell.m */; };
+		D5D62A321C4E22690036915F /* ElectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A311C4E22690036915F /* ElectionViewCell.m */; };
+		D5D62A3D1C4F27720036915F /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A3C1C4F27720036915F /* Http.m */; };
+		D5D62A431C4F35B90036915F /* UIRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A421C4F35B90036915F /* UIRefreshTableViewController.m */; };
+		D5D62A4D1C5065990036915F /* QCBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A4C1C5065990036915F /* QCBrand.m */; };
+		D5D62A501C5066220036915F /* QCElection.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A4F1C5066220036915F /* QCElection.m */; };
+		D5D62A541C506BF60036915F /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A531C506BF60036915F /* NSString+Helper.m */; };
+		D5D62A581C5074CA0036915F /* UILabel+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A571C5074CA0036915F /* UILabel+Factory.m */; };
+		D5D62A5C1C5083A50036915F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62A5B1C5083A40036915F /* image1.jpg */; };
+		D5D62A601C50A0670036915F /* ElectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A5F1C50A0670036915F /* ElectionService.m */; };
+		D5D62A711C50B2A30036915F /* QCService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A701C50B2A30036915F /* QCService.m */; };
+		D5D62A741C50B6010036915F /* HttpMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A731C50B6010036915F /* HttpMessage.m */; };
+		D5D62A771C50D0720036915F /* QCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A761C50D0720036915F /* QCMessage.m */; };
+		D5D62A7A1C50D09A0036915F /* ElectionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A791C50D09A0036915F /* ElectionMessage.m */; };
+		D5D62A7D1C50D3240036915F /* HttpMsgCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A7C1C50D3240036915F /* HttpMsgCtrl.m */; };
 		F60A685D7BDAEDCC60A58432 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F94406E8726717E950A2587 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +55,7 @@
 		D5D62A071C48CC620036915F /* HomePageGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomePageGuideView.m; path = Classes/Src/HomePage/HomePageGuideView.m; sourceTree = "<group>"; };
 		D5D62A091C4DC7540036915F /* UIConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIConstant.h; path = Classes/Constant/UIConstant.h; sourceTree = "<group>"; };
 		D5D62A0A1C4DC81E0036915F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		D5D62A161C4E10120036915F /* QCUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QCUIView.h; path = Classes/Common/QCUIView.h; sourceTree = "<group>"; };
+		D5D62A161C4E10120036915F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Header.h; path = Classes/Common/Header.h; sourceTree = "<group>"; };
 		D5D62A1A1C4E124B0036915F /* UITableView+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+Factory.h"; path = "Classes/Common/UITableView/UITableView+Factory.h"; sourceTree = "<group>"; };
 		D5D62A1B1C4E124B0036915F /* UITableView+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Factory.m"; path = "Classes/Common/UITableView/UITableView+Factory.m"; sourceTree = "<group>"; };
 		D5D62A1D1C4E12B00036915F /* UITableView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+Helper.h"; path = "Classes/Common/UITableView/UITableView+Helper.h"; sourceTree = "<group>"; };
@@ -53,8 +66,34 @@
 		D5D62A291C4E18120036915F /* QCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCModel.m; path = Classes/Common/Model/QCModel.m; sourceTree = "<group>"; };
 		D5D62A2B1C4E1EFD0036915F /* QCArtifact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCArtifact.h; path = Classes/Common/Model/QCArtifact.h; sourceTree = "<group>"; };
 		D5D62A2C1C4E1EFD0036915F /* QCArtifact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCArtifact.m; path = Classes/Common/Model/QCArtifact.m; sourceTree = "<group>"; };
-		D5D62A301C4E22690036915F /* ElectedViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectedViewCell.h; path = Classes/Src/HomePage/ElectedViewCell.h; sourceTree = "<group>"; };
-		D5D62A311C4E22690036915F /* ElectedViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectedViewCell.m; path = Classes/Src/HomePage/ElectedViewCell.m; sourceTree = "<group>"; };
+		D5D62A301C4E22690036915F /* ElectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionViewCell.h; path = Classes/Src/HomePage/ElectionViewCell.h; sourceTree = "<group>"; };
+		D5D62A311C4E22690036915F /* ElectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionViewCell.m; path = Classes/Src/HomePage/ElectionViewCell.m; sourceTree = "<group>"; };
+		D5D62A3B1C4F27720036915F /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Http.h; path = Classes/Common/Http/Http.h; sourceTree = "<group>"; };
+		D5D62A3C1C4F27720036915F /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Http.m; path = Classes/Common/Http/Http.m; sourceTree = "<group>"; };
+		D5D62A411C4F35B90036915F /* UIRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRefreshTableViewController.h; path = Classes/Common/UIViewController/UIRefreshTableViewController.h; sourceTree = "<group>"; };
+		D5D62A421C4F35B90036915F /* UIRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIRefreshTableViewController.m; path = Classes/Common/UIViewController/UIRefreshTableViewController.m; sourceTree = "<group>"; };
+		D5D62A4B1C5065990036915F /* QCBrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCBrand.h; path = Classes/Common/Model/QCBrand.h; sourceTree = "<group>"; };
+		D5D62A4C1C5065990036915F /* QCBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCBrand.m; path = Classes/Common/Model/QCBrand.m; sourceTree = "<group>"; };
+		D5D62A4E1C5066220036915F /* QCElection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCElection.h; path = Classes/Common/Model/QCElection.h; sourceTree = "<group>"; };
+		D5D62A4F1C5066220036915F /* QCElection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCElection.m; path = Classes/Common/Model/QCElection.m; sourceTree = "<group>"; };
+		D5D62A521C506BF60036915F /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Helper.h"; path = "Classes/Common/NSString/NSString+Helper.h"; sourceTree = "<group>"; };
+		D5D62A531C506BF60036915F /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Helper.m"; path = "Classes/Common/NSString/NSString+Helper.m"; sourceTree = "<group>"; };
+		D5D62A561C5074CA0036915F /* UILabel+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Factory.h"; path = "Classes/Common/UILabel/UILabel+Factory.h"; sourceTree = "<group>"; };
+		D5D62A571C5074CA0036915F /* UILabel+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Factory.m"; path = "Classes/Common/UILabel/UILabel+Factory.m"; sourceTree = "<group>"; };
+		D5D62A5B1C5083A40036915F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = Resources/Test/image1.jpg; sourceTree = "<group>"; };
+		D5D62A5E1C50A0670036915F /* ElectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionService.h; path = Classes/Src/HomePage/ElectionService.h; sourceTree = "<group>"; };
+		D5D62A5F1C50A0670036915F /* ElectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionService.m; path = Classes/Src/HomePage/ElectionService.m; sourceTree = "<group>"; };
+		D5D62A671C50A3F00036915F /* HttpConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HttpConstant.h; path = Classes/Constant/HttpConstant.h; sourceTree = "<group>"; };
+		D5D62A6F1C50B2A30036915F /* QCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCService.h; path = Classes/Common/Model/QCService.h; sourceTree = "<group>"; };
+		D5D62A701C50B2A30036915F /* QCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCService.m; path = Classes/Common/Model/QCService.m; sourceTree = "<group>"; };
+		D5D62A721C50B6010036915F /* HttpMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpMessage.h; path = Classes/Common/Http/HttpMessage.h; sourceTree = "<group>"; };
+		D5D62A731C50B6010036915F /* HttpMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpMessage.m; path = Classes/Common/Http/HttpMessage.m; sourceTree = "<group>"; };
+		D5D62A751C50D0720036915F /* QCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCMessage.h; path = Classes/Common/Model/QCMessage.h; sourceTree = "<group>"; };
+		D5D62A761C50D0720036915F /* QCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCMessage.m; path = Classes/Common/Model/QCMessage.m; sourceTree = "<group>"; };
+		D5D62A781C50D09A0036915F /* ElectionMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionMessage.h; path = Classes/Src/HomePage/ElectionMessage.h; sourceTree = "<group>"; };
+		D5D62A791C50D09A0036915F /* ElectionMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionMessage.m; path = Classes/Src/HomePage/ElectionMessage.m; sourceTree = "<group>"; };
+		D5D62A7B1C50D3240036915F /* HttpMsgCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpMsgCtrl.h; path = Classes/Common/Http/HttpMsgCtrl.h; sourceTree = "<group>"; };
+		D5D62A7C1C50D3240036915F /* HttpMsgCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpMsgCtrl.m; path = Classes/Common/Http/HttpMsgCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +177,8 @@
 		D58717681C4353620003C2B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62A5A1C5083850036915F /* Test */,
+				D5D62A591C5083420036915F /* Image */,
 				D587175C1C4335570003C2B8 /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -164,12 +205,16 @@
 		D587176B1C4353940003C2B8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62A3A1C4F271F0036915F /* Http */,
+				D5D62A331C4F18250036915F /* Protocol */,
 				D5D62A2E1C4E20770036915F /* UIImage */,
+				D5D62A551C5074A30036915F /* UILabel */,
 				D5D62A271C4E17C10036915F /* Model */,
+				D5D62A511C506BB00036915F /* NSString */,
 				D5D62A201C4E152C0036915F /* NSArray */,
 				D5D62A0E1C4DDEA60036915F /* UITableView */,
 				D58717741C4356A60003C2B8 /* UIViewController */,
-				D5D62A161C4E10120036915F /* QCUIView.h */,
+				D5D62A161C4E10120036915F /* Header.h */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -178,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				D5D62A091C4DC7540036915F /* UIConstant.h */,
+				D5D62A671C50A3F00036915F /* HttpConstant.h */,
 			);
 			name = Constant;
 			sourceTree = "<group>";
@@ -196,6 +242,7 @@
 				D58717751C4356D00003C2B8 /* Controller */,
 				D5D62A051C48C6E40036915F /* View */,
 				D5D62A2F1C4E219A0036915F /* Cell */,
+				D5D62A6B1C50AD720036915F /* Model */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -205,6 +252,8 @@
 			children = (
 				D587177D1C4376DA0003C2B8 /* UICommonViewController.h */,
 				D587177E1C4376DA0003C2B8 /* UICommonViewController.m */,
+				D5D62A411C4F35B90036915F /* UIRefreshTableViewController.h */,
+				D5D62A421C4F35B90036915F /* UIRefreshTableViewController.m */,
 			);
 			name = UIViewController;
 			sourceTree = "<group>";
@@ -250,10 +299,18 @@
 		D5D62A271C4E17C10036915F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62A4E1C5066220036915F /* QCElection.h */,
+				D5D62A4F1C5066220036915F /* QCElection.m */,
 				D5D62A281C4E18120036915F /* QCModel.h */,
 				D5D62A291C4E18120036915F /* QCModel.m */,
 				D5D62A2B1C4E1EFD0036915F /* QCArtifact.h */,
 				D5D62A2C1C4E1EFD0036915F /* QCArtifact.m */,
+				D5D62A4B1C5065990036915F /* QCBrand.h */,
+				D5D62A4C1C5065990036915F /* QCBrand.m */,
+				D5D62A6F1C50B2A30036915F /* QCService.h */,
+				D5D62A701C50B2A30036915F /* QCService.m */,
+				D5D62A751C50D0720036915F /* QCMessage.h */,
+				D5D62A761C50D0720036915F /* QCMessage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -268,10 +325,74 @@
 		D5D62A2F1C4E219A0036915F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D5D62A301C4E22690036915F /* ElectedViewCell.h */,
-				D5D62A311C4E22690036915F /* ElectedViewCell.m */,
+				D5D62A301C4E22690036915F /* ElectionViewCell.h */,
+				D5D62A311C4E22690036915F /* ElectionViewCell.m */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		D5D62A331C4F18250036915F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		D5D62A3A1C4F271F0036915F /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62A3B1C4F27720036915F /* Http.h */,
+				D5D62A3C1C4F27720036915F /* Http.m */,
+				D5D62A721C50B6010036915F /* HttpMessage.h */,
+				D5D62A731C50B6010036915F /* HttpMessage.m */,
+				D5D62A7B1C50D3240036915F /* HttpMsgCtrl.h */,
+				D5D62A7C1C50D3240036915F /* HttpMsgCtrl.m */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		D5D62A511C506BB00036915F /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62A521C506BF60036915F /* NSString+Helper.h */,
+				D5D62A531C506BF60036915F /* NSString+Helper.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		D5D62A551C5074A30036915F /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62A561C5074CA0036915F /* UILabel+Factory.h */,
+				D5D62A571C5074CA0036915F /* UILabel+Factory.m */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
+		D5D62A591C5083420036915F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		D5D62A5A1C5083850036915F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62A5B1C5083A40036915F /* image1.jpg */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		D5D62A6B1C50AD720036915F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62A5E1C50A0670036915F /* ElectionService.h */,
+				D5D62A5F1C50A0670036915F /* ElectionService.m */,
+				D5D62A781C50D09A0036915F /* ElectionMessage.h */,
+				D5D62A791C50D09A0036915F /* ElectionMessage.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +458,7 @@
 			files = (
 				D587175D1C4335570003C2B8 /* Assets.xcassets in Resources */,
 				D58717721C4354270003C2B8 /* Root_Iphone.storyboard in Resources */,
+				D5D62A5C1C5083A50036915F /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,14 +520,26 @@
 				D5D62A1C1C4E124B0036915F /* UITableView+Factory.m in Sources */,
 				D5D62A2D1C4E1EFD0036915F /* QCArtifact.m in Sources */,
 				D58717821C43773F0003C2B8 /* HomePageViewController.m in Sources */,
+				D5D62A581C5074CA0036915F /* UILabel+Factory.m in Sources */,
 				D58717701C43541C0003C2B8 /* AppDelegate.m in Sources */,
 				D58717521C4335570003C2B8 /* main.m in Sources */,
+				D5D62A7A1C50D09A0036915F /* ElectionMessage.m in Sources */,
+				D5D62A501C5066220036915F /* QCElection.m in Sources */,
+				D5D62A3D1C4F27720036915F /* Http.m in Sources */,
 				D5D62A2A1C4E18120036915F /* QCModel.m in Sources */,
 				D5D62A081C48CC620036915F /* HomePageGuideView.m in Sources */,
+				D5D62A711C50B2A30036915F /* QCService.m in Sources */,
 				D587177F1C4376DA0003C2B8 /* UICommonViewController.m in Sources */,
 				D5D62A231C4E15500036915F /* NSArray+Helper.m in Sources */,
+				D5D62A601C50A0670036915F /* ElectionService.m in Sources */,
+				D5D62A4D1C5065990036915F /* QCBrand.m in Sources */,
 				D5D62A1F1C4E12B00036915F /* UITableView+Helper.m in Sources */,
-				D5D62A321C4E22690036915F /* ElectedViewCell.m in Sources */,
+				D5D62A321C4E22690036915F /* ElectionViewCell.m in Sources */,
+				D5D62A431C4F35B90036915F /* UIRefreshTableViewController.m in Sources */,
+				D5D62A7D1C50D3240036915F /* HttpMsgCtrl.m in Sources */,
+				D5D62A741C50B6010036915F /* HttpMessage.m in Sources */,
+				D5D62A541C506BF60036915F /* NSString+Helper.m in Sources */,
+				D5D62A771C50D0720036915F /* QCMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

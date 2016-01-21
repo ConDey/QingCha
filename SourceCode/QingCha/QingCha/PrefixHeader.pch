@@ -15,6 +15,8 @@
 #import <UIKit/UIKit.h>
 
 #import "UIConstant.h"
-#import "QCUIView.h"
+#import "HttpConstant.h"
+
+#import "Header.h"
 
 #endif /* PrefixHeader_pch */

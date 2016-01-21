@@ -9,10 +9,9 @@
 #import "HomePageViewController.h"
 
 #import "HomePageGuideView.h"
-#import "ElectedViewCell.h"
+#import "ElectionViewCell.h"
 
 #define HOME_GUIDE_HEIGHT  STATUS_BAR_HEIGHT + 50.0
-
 #define HOME_CONTENT_INDEX_Y HOME_GUIDE_HEIGHT
 
 @interface HomePageViewController ()
@@ -31,8 +30,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self initView]; // 初始化View
-    // [self initData]; // 初始化数据
+    [self initView];    // 初始化View
+    [self refreshData]; // 初始化数据
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,7 +63,7 @@
     self.isNavBarShow = NO;  // 隐藏NavBar
     NSArray *segmentedData = [[NSArray alloc]initWithObjects:@"推荐",@"品牌",nil];
     // 这里隐藏了NavigationBar,所以Y轴的距离计算的时候要加上StatusBar的高度
-    self.guideView = [[HomePageGuideView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, HOME_GUIDE_HEIGHT) andSegmentedData:segmentedData];
+    self.guideView = [[HomePageGuideView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, HOME_GUIDE_HEIGHT) segmentedData:segmentedData];
     
     // 绑定SegmentedControl事件
     [self.guideView.segmentedControl addTarget:self action:@selector(segmentedControlPressed:) forControlEvents:UIControlEventValueChanged];
@@ -80,11 +79,19 @@
     [self.view addSubview:self.tableview];
 }
 
-- (NSArray *)elections{
-    if([NSArray isArrayNull:_elections]){
+- (NSArray *)elections {
+    if([NSArray isArrayNull:_elections]) {
         _elections = [[NSArray alloc]init];
     }
     return _elections;
+}
+
+#pragma mark - datas
+
+- (void)refreshData {
+    
+    _elections = [[NSArray alloc]init];
+    
 }
 
 #pragma mark - HomePageGuideView : SegmentedControl 事件
@@ -120,7 +127,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 0;
+    return [ElectionViewCell height];
 }
 
 @end

@@ -16,6 +16,6 @@
 @property (nonatomic,retain) UISegmentedControl *segmentedControl; // 导航菜单标题
 
 // 初始化方法
-- (id) initWithFrame:(CGRect)frame andSegmentedData:(NSArray *)arrays;
+- (id) initWithFrame:(CGRect)frame segmentedData:(NSArray *)arrays;
 
 @end

@@ -16,11 +16,16 @@
 // 商品简介
 @property (nonatomic,retain) NSString *introduction;
 
-// 商品标签集合
-@property (nonatomic,retain) NSArray *tags;
+// 作品品牌
+@property (nonatomic,retain) QCBrand *brand;
 
-// 推荐图
-@property (nonatomic,retain) UIImage *electionImage;
+// 作者
+@property (nonatomic,retain) NSString *author;
 
+// 出处
+@property (nonatomic,retain) NSString *source;
+
+// 查看数量
+@property (nonatomic,retain) NSString *visitnum;
 
 @end

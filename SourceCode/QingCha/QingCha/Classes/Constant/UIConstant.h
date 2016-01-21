@@ -19,7 +19,10 @@
 
 // 色彩相关属性
 
-#define COMMON_BLACK_COLOR [UIColor colorWithRed:7.0 / 255.0 green:21.0 / 255.0 blue:21.0 / 255.0 alpha:1];
+#define UI_BLACK_COLOR                 [UIColor colorWithRed:7.0 / 255.0 green:21.0 / 255.0 blue:21.0 / 255.0 alpha:1];
+#define UI_GREP_COLOR                  [UIColor colorWithRed:201.0 / 255.0 green:201.0 / 255.0 blue:201.0 / 255.0 alpha:1]
 
+#define UI_TITLE_COLOR                 [UIColor colorWithRed:38.0 / 255.0 green:37.0 / 255.0 blue:37.0 / 255.0 alpha:1];
+#define UI_INTRODUCTION_COLOR          [UIColor colorWithRed:137.0 / 255.0 green:137.0 / 255.0 blue:137.0 / 255.0 alpha:1];
 
 #endif /* UIConstant_h */

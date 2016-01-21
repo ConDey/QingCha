@@ -9,6 +9,6 @@
 
 // QingCha 首页
 
-@interface HomePageViewController : UICommonViewController<UITableViewDelegate, UITableViewDataSource>
+@interface HomePageViewController : UIRefreshTableViewController<UITableViewDelegate, UITableViewDataSource>
 
 @end

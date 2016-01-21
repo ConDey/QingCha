@@ -43,7 +43,7 @@
  *   ----------------------------------------
  */
 
-- (id)initWithFrame:(CGRect)frame andSegmentedData:(NSArray *)arrays {
+- (id)initWithFrame:(CGRect)frame segmentedData:(NSArray *)arrays {
   
     self = [super initWithFrame:frame];
     if (self) {
@@ -63,11 +63,11 @@
         self.segmentedControl.layer.masksToBounds = YES;
         
         // 这个是设置按下按钮时的颜色
-        self.segmentedControl.tintColor = COMMON_BLACK_COLOR;
+        self.segmentedControl.tintColor = UI_BLACK_COLOR;
         self.segmentedControl.selectedSegmentIndex = 0;  // 默认选中的按钮索引
 
         // 下面的代码实同正常状态和按下状态的属性控制,比如字体的大小和颜色等
-        UIColor *fontUIColor = COMMON_BLACK_COLOR;
+        UIColor *fontUIColor = UI_BLACK_COLOR;
         NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:14],NSFontAttributeName,fontUIColor, NSForegroundColorAttributeName, nil];
         [self.segmentedControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
         [self addSubview:self.segmentedControl];
