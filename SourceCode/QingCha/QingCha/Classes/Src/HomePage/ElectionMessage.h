@@ -6,7 +6,7 @@
 //  Copyright © 2016年 QingCha. All rights reserved.
 //
 
-// 数据回执
+// 推荐作品数据回执
 
 @interface ElectionMessage : QCMessage
 

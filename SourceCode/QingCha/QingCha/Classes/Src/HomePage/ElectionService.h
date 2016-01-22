@@ -16,7 +16,7 @@
 
 @protocol ElectionServiceDelegate <NSObject>
 
-- (void)electionsLoadingFinish:(ElectionMessage *)serivce;   //  请求结束之后的数据处理
+- (void)electionsLoadingFinish:(ElectionMessage *)message;   //  请求结束之后的数据处理
 
 @end
 

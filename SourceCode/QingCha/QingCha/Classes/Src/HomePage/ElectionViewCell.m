@@ -24,6 +24,7 @@
 #define NUM_LABEL_INDEX_X   SCREEN_WIDTH - TITLE_LABEL_INDEX_X - NUM_LABEL_WIDTH
 #define NUM_LABEL_INDEX_Y   10.0 + INTRODUCTION_LABEL_INDEX_Y + INTRODUCTION_LABEL_FONT_SIZE
 #define NUM_LABEL_WIDTH     200
+#define NUM_LABEL_HEIGHT    18
 #define NUM_LABEL_FONT_SIZE 12
 
 #define TAG_LABEL_INDEX_X TITLE_LABEL_INDEX_X;
@@ -34,7 +35,7 @@
 #define TAG_LABEL_FONT_SIZE 12
 
 
-#define ELECTED_CELL_HEIGHT NUM_LABEL_INDEX_Y + NUM_LABEL_FONT_SIZE + 10.0
+#define ELECTED_CELL_HEIGHT NUM_LABEL_INDEX_Y + TAG_LAEBL_HEIGHT + 10.0
 
 @interface ElectionViewCell ()
 
@@ -43,6 +44,8 @@
 @property (nonatomic,retain) UILabel *introductionLabel;
 
 @property (nonatomic,retain) UILabel *numLabel;
+
+@property (nonatomic,retain) NSArray *tags;
 
 @end
 
@@ -104,13 +107,14 @@
 
 - (UILabel *)numLabel {
     if (_numLabel == nil) {
-        _numLabel = [[UILabel alloc]initWithFrame:CGRectMake(INTRODUCTION_LABEL_INDEX_X, INTRODUCTION_LABEL_INDEX_Y, INTRODUCTION_LABEL_WIDTH, NUM_LABEL_FONT_SIZE)];
+        _numLabel = [[UILabel alloc]initWithFrame:CGRectMake(NUM_LABEL_INDEX_X, NUM_LABEL_INDEX_Y, NUM_LABEL_WIDTH, NUM_LABEL_HEIGHT)];
         _numLabel.font = [UIFont systemFontOfSize:NUM_LABEL_FONT_SIZE];
-        _numLabel.textColor = UI_GREP_COLOR;
+        _numLabel.textColor = UI_INTRODUCTION_COLOR;
         _numLabel.textAlignment = NSTextAlignmentRight;
     }
     return _numLabel;
 }
+
 
 
 // ---------- 导入数据模型 ---------------------
@@ -119,7 +123,8 @@
     if (election == nil) {
         return;
     }
-    [self.electionImageView setImage:election.electionImage]; // 导入推荐图片
+    //TEST:TEST
+    [self.electionImageView setImage:[UIImage imageNamed:@"image1.jpg"]]; // 导入推荐图片
     [self.titleLabel setText:election.title];
     [self.introductionLabel setText:election.introduction];
     [self.numLabel setText:[NSString stringByAppendingHead:election.visitnum foot:@"人喜欢"]];

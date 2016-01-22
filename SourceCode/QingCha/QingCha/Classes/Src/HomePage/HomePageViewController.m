@@ -10,17 +10,23 @@
 
 #import "HomePageGuideView.h"
 #import "ElectionViewCell.h"
+#import "ElectionMessage.h"
 
 #define HOME_GUIDE_HEIGHT  STATUS_BAR_HEIGHT + 50.0
 #define HOME_CONTENT_INDEX_Y HOME_GUIDE_HEIGHT
+
+#define HOME_PAGE_SIZE  20
 
 @interface HomePageViewController ()
 
 // Views
 @property (nonatomic,retain) HomePageGuideView *guideView;
 
-// ElectedTableDataSource
-@property (nonatomic,retain) NSArray *elections;
+// ElectedTableDatas
+@property (nonatomic,retain) NSMutableArray *elections;
+
+// Service
+@property (nonatomic,retain) ElectionService *electionService;
 
 @end
 
@@ -61,6 +67,7 @@
      *   ----------------------------------------------
      */
     self.isNavBarShow = NO;  // 隐藏NavBar
+    self.pageSize = HOME_PAGE_SIZE;
     NSArray *segmentedData = [[NSArray alloc]initWithObjects:@"推荐",@"品牌",nil];
     // 这里隐藏了NavigationBar,所以Y轴的距离计算的时候要加上StatusBar的高度
     self.guideView = [[HomePageGuideView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, HOME_GUIDE_HEIGHT) segmentedData:segmentedData];
@@ -79,19 +86,41 @@
     [self.view addSubview:self.tableview];
 }
 
-- (NSArray *)elections {
+- (NSMutableArray *)elections {
     if([NSArray isArrayNull:_elections]) {
-        _elections = [[NSArray alloc]init];
+        _elections = [[NSMutableArray alloc]init];
     }
     return _elections;
+}
+
+- (ElectionService *)electionService {
+    if(_electionService == nil) {
+        _electionService = [[ElectionService alloc]init];
+        _electionService.delegate = self;
+    }
+    return _electionService;
+}
+
+
+#pragma mark - datas
+
+- (void)electionsLoadingFinish:(ElectionMessage *)message {
+    if ([message isSuccess]) {
+        // 设置分页数据
+        self.currentPage = message.currentPage;
+        self.totalCount = message.totalCount;
+        self.totalPage  = message.totalPage;
+        // 设置推荐作品数据
+        [self.elections addObjectsFromArray:message.elections];
+        [self.tableview reloadData];
+    }
+    
 }
 
 #pragma mark - datas
 
 - (void)refreshData {
-    
-    _elections = [[NSArray alloc]init];
-    
+    [self.electionService loadingElectionsByPageIndex:1 pageSize:self.pageSize];
 }
 
 #pragma mark - HomePageGuideView : SegmentedControl 事件
@@ -123,7 +152,15 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    
+    ElectionViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ElectionViewCell"];
+    
+    if (cell == nil) {
+        cell = [[ElectionViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ElectionViewCell"];
+    }
+    [cell importDataForElection:[self.elections objectAtIndex:indexPath.row]];
+    
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

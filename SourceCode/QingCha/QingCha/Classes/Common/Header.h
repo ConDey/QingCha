@@ -26,6 +26,7 @@
 
 #import "NSArray+Helper.h"
 #import "NSString+Helper.h"
+#import "NSNumber+Helper.h"
 
 #import "QCModel.h"
 #import "QCBrand.h"

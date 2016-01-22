@@ -10,6 +10,9 @@
 
 @interface QCArtifact : QCModel
 
+// aid
+@property (nonatomic,retain) NSString *aid;
+
 // 商品标题
 @property (nonatomic,retain) NSString *title;
 
@@ -17,7 +20,7 @@
 @property (nonatomic,retain) NSString *introduction;
 
 // 作品品牌
-@property (nonatomic,retain) QCBrand *brand;
+@property (nonatomic,retain) QCBrand  *brand;
 
 // 作者
 @property (nonatomic,retain) NSString *author;
@@ -27,5 +30,8 @@
 
 // 查看数量
 @property (nonatomic,retain) NSString *visitnum;
+
+
+- (id)initWithDictionary:(NSDictionary *)dict;  // 初始化方法
 
 @end

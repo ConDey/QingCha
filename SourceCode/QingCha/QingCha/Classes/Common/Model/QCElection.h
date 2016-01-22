@@ -12,6 +12,9 @@
 
 @interface QCElection : QCArtifact
 
+// eid
+@property (nonatomic,retain) NSString *eid;
+
 // 推荐图
 @property (nonatomic,retain) UIImage *electionImage;
 

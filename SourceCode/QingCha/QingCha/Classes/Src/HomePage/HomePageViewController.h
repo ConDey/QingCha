@@ -7,8 +7,10 @@
 //
 #import <UIKit/UIKit.h>
 
+#import "ElectionService.h"
+
 // QingCha 首页
 
-@interface HomePageViewController : UIRefreshTableViewController<UITableViewDelegate, UITableViewDataSource>
+@interface HomePageViewController : UIRefreshTableViewController<UITableViewDelegate, UITableViewDataSource,ElectionServiceDelegate>
 
 @end

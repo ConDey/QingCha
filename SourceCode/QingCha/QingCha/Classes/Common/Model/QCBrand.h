@@ -12,7 +12,14 @@
 
 @interface QCBrand : QCModel
 
+// bid
+@property (nonatomic,retain) NSString *bid;
+
 // 品牌名称
 @property (nonatomic,retain) NSString *name;
+
+
+
+- (id)initWithDictionary:(NSDictionary *)dict;
 
 @end

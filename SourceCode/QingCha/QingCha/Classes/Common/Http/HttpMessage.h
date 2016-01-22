@@ -29,7 +29,7 @@ typedef enum {
 // 返回的相关信息
 @property (nonatomic,assign) RESULT_CODE resultCode;
 @property (nonatomic,retain) NSString *resultMsg;
-@property (nonatomic,retain) NSString *msg;
+@property (nonatomic,retain) NSDictionary *content;  // 信息实体key:value
 
 /*!
  @method        initWithDelegate:requestUrl:postDataDic:serivceCode:
@@ -69,6 +69,7 @@ typedef enum {
 @protocol HttpResponseDelegate<NSObject>
 
 @optional
+
 /*!
  @method        receiveDidFinished
  @abstract      请求完成（请求有返回）后的回调方法

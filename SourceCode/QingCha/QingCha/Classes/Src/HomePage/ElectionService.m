@@ -19,4 +19,22 @@
     [self.httpMsgCtrl request:httpmessage];
 }
 
+#pragma mark HttpResponseDelegate代理方法
+
+- (void)receiveDidFinished:(HttpMessage *)receiveMsg {
+    [super receiveDidFinished:receiveMsg];
+    
+    if (receiveMsg.serviceCode == QC_Election_PageLoading) {
+        [self.delegate electionsLoadingFinish:[[ElectionMessage alloc]initWithHttpMessage:receiveMsg]];
+    }
+}
+
+- (void)receiveDidFailed:(HttpMessage *)receiveMsg {
+    [super receiveDidFailed:receiveMsg];
+    
+    if (receiveMsg.serviceCode == QC_Election_PageLoading) {
+        [self.delegate electionsLoadingFinish:[[ElectionMessage alloc]initNetWorkingErrorWithMsg:receiveMsg.resultMsg]];
+    }
+}
+
 @end
