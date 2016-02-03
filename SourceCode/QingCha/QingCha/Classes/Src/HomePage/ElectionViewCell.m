@@ -34,18 +34,16 @@
 #define TAG_LAEBL_HEIGHT 18
 #define TAG_LABEL_FONT_SIZE 12
 
-
-#define ELECTED_CELL_HEIGHT NUM_LABEL_INDEX_Y + TAG_LAEBL_HEIGHT + 10.0
+#define ELECTED_CELL_HEIGHT NUM_LABEL_INDEX_Y + TAG_LAEBL_HEIGHT + 12.0
 
 @interface ElectionViewCell ()
 
 @property (nonatomic,retain) UIImageView *electionImageView;
 @property (nonatomic,retain) UILabel *titleLabel;
 @property (nonatomic,retain) UILabel *introductionLabel;
+@property (nonatomic,retain) NSMutableArray *tagViews;
 
 @property (nonatomic,retain) UILabel *numLabel;
-
-@property (nonatomic,retain) NSArray *tags;
 
 @end
 
@@ -115,7 +113,12 @@
     return _numLabel;
 }
 
-
+- (NSMutableArray *)tagViews {
+    if (_tagViews == nil) {
+        _tagViews = [[NSMutableArray alloc]init];
+    }
+    return _tagViews;
+}
 
 // ---------- 导入数据模型 ---------------------
 
@@ -123,12 +126,20 @@
     if (election == nil) {
         return;
     }
+    
     //TEST:TEST
     [self.electionImageView setImage:[UIImage imageNamed:@"image1.jpg"]]; // 导入推荐图片
     [self.titleLabel setText:election.title];
     [self.introductionLabel setText:election.introduction];
     [self.numLabel setText:[NSString stringByAppendingHead:election.visitnum foot:@"人喜欢"]];
     
+    /**
+     *  这里涉及到一些效率问题可能固定写死tagView会比较好,但是这样以后能动态生成不同数量的tagView,方便扩展!
+     */
+    for (int index = 0; index < self.tagViews.count; index++) {
+        UIView *tagView = [self.tagViews objectAtIndex:index]; // 移除以前的tagView
+        [tagView removeFromSuperview];
+    }
     // tag在x轴的位置,计算偏移量
     CGFloat tagIndex = TAG_LABEL_INDEX_X;
     // 设置标签
@@ -141,6 +152,7 @@
         // 计算tagLabel的位置, 根据文字的大小计算长度
         NSDictionary *textSizeAttirbute = @{NSFontAttributeName: [UIFont systemFontOfSize:TAG_LABEL_FONT_SIZE]};
         tagLabel.frame = CGRectMake(tagIndex, TAG_LABEL_INDEX_Y, [NSString widthString:text font:textSizeAttirbute] + TAG_LABEL_WIDTH_EQUALIZE, TAG_LAEBL_HEIGHT);
+        [self.tagViews addObject:tagLabel];
         [self.contentView addSubview:tagLabel];
         
         // 重新计算下一个tag在x轴的位置

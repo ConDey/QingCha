@@ -21,7 +21,12 @@
 - (id)initWithDictionary:(NSDictionary *)dict {
     
     if (self = [super initWithDictionary:dict]) {
-        self.eid = [dict objectForKey:EID];
+        self.eid = [dict objectForKey:EID]; 
+        //初始化QCBrand
+        NSMutableDictionary *brandDict = [[NSMutableDictionary alloc]init];
+        [brandDict setObject:[dict objectForKey:@"bid"] forKey:@"bid"];
+        [brandDict setObject:[dict objectForKey:@"bname"] forKey:@"name"];
+        self.brand = [[QCBrand alloc]initWithDictionary:brandDict];
     }
     return self;
 }

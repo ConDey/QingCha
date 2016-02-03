@@ -13,9 +13,20 @@
 #define LOGO_IMAGE_WIDTH   25.0
 #define LOGO_IMAGE_HEIGHT  32.0
 
-#define CONTROL_INDEX_Y 30.0
-#define CONTROL_WIDTH   150.0
-#define CONTROL_HEIGHT  30.0
+#define CONTROL_INDEX_Y    30.0
+#define CONTROL_WIDTH      150.0
+#define CONTROL_HEIGHT     30.0
+
+#define TRANSVERSE_INDEX_X 0
+#define TRANSVERSE_INDEX_Y frame.size.height - 1
+#define TRANSVERSE_HEIGHT  0.5
+
+@interface HomePageGuideView ()
+
+@property (nonatomic,retain) UIView *transverse; // GuideView分割线
+
+@end
+
 
 @implementation HomePageGuideView
 
@@ -71,6 +82,13 @@
         NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont boldSystemFontOfSize:14],NSFontAttributeName,fontUIColor, NSForegroundColorAttributeName, nil];
         [self.segmentedControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
         [self addSubview:self.segmentedControl];
+        
+        self.transverse = [[UIView alloc]initWithFrame:CGRectMake(TRANSVERSE_INDEX_X, TRANSVERSE_INDEX_Y, frame.size.width, TRANSVERSE_HEIGHT)];
+        self.transverse.backgroundColor = UI_GREP_COLOR;
+        self.transverse.layer.shadowOffset =  CGSizeMake(0,0.5);
+        self.transverse.layer.shadowOpacity = 0.5;//阴影透明度，默认0
+        self.transverse.layer.shadowRadius =  0.5;//阴影半径，默认3
+        [self addSubview:self.transverse];
     }
     return self;
 }

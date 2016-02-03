@@ -10,16 +10,17 @@
 
 // 相关常量
 #define BID            @"bid"
-#define NAME           @"brandName"
+#define NAME           @"name"
+#define INTRODUCTION   @"introduction"
 
 @implementation QCBrand
 
 
 - (id)initWithDictionary:(NSDictionary *)dict {
-    
     if (self = [super init]) {
-        self.bid = [dict objectForKey:BID];
+        self.bid  = [dict objectForKey:BID];
         self.name = [dict objectForKey:NAME];
+        self.introduction = [dict objectForKey:INTRODUCTION];
     }
     return self;
 }

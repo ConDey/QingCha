@@ -13,6 +13,7 @@
 typedef enum {
 
     QC_Election_PageLoading = 0x0101,  // 加载推荐作品
+    QC_TopBrand_Loading     = 0x0102,  // 加载置顶品牌
     
 } SERVICE_CODE;
 
@@ -39,5 +40,8 @@ typedef enum {
 #define HTTP_CURRENT_PAGE @"currentPage"
 #define HTTP_TOTAL_PAGE   @"totalPage"
 #define HTTP_TOTAL_COUNT  @"totalCount"
+
+#define HTTP_PAGE_INDEX   @"pageIndex"
+#define HTTP_PAGE_SIZE    @"pageSize"
 
 #endif /* HttpConstant_h */

@@ -15,6 +15,12 @@
 
 @property (nonatomic,retain) UITableView *tableview;
 
+@property (nonatomic,retain) UITableView *grouptableview;
+
 @property (nonatomic,assign) BOOL isNavBarShow; // NavBar是否存在,默认存在
+
+@property (nonatomic,retain) NSString *titleOfNav; //NavBar如果存在,设置标题
+
+@property (nonatomic,assign) BOOL isCommonBackItems; // 是否设置为通用的backItem, 默认是
 
 @end

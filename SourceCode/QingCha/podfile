@@ -3,10 +3,10 @@
 
 inhibit_all_warnings!
 
-pod 'CHTCollectionViewWaterfallLayout'
 pod 'SDWebImage'
 pod "MJRefresh", "~> 2.0.2"
 pod "AFNetworking", "~> 2.5.4"
 pod "SBJson", "~> 4.0.1"
+pod 'PSCollectionView', '~> 0.0.1'
 
 

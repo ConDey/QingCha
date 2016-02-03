@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CHTCollectionViewWaterfallLayout.xcscheme</key>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MJRefresh.xcscheme</key>
+		<key>PSCollectionView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,22 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0B7CF84CD709D15A9769AE2AB8AB8C9D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1B182F3B095019353CCA8A5288C939B0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>69DEAB268128EC21023DB3CFCA311056</key>
+		<key>285B351AD072E46E763ADA1D8A256295</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A790286A7DCB7DAFFEE8AE1D2351302</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E013A9E0A1F6FF13DFE0783581B7902</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B36D462102DAF8E84F6D9AB9C868C59</key>
+		<key>9D018B4F8DFE910FAB4AA66E15AB4E3F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -16,4 +16,6 @@
 
 @property (weak, nonatomic, readonly) HttpMsgCtrl *httpMsgCtrl;
 
+- (NSMutableDictionary *)createPagingParamsByPageIndex:(NSInteger)pageIndex pageSize:(NSInteger)pageSize; // 创建分页请求参数
+
 @end

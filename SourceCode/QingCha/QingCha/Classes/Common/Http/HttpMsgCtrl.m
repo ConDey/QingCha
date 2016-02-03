@@ -39,7 +39,7 @@
             [election setObject:@"仙果人间都未有,今朝忽见天下门" forKey:@"title"];
             [election setObject:@"唐代张籍有诗曰:仙果人间都未有,今朝忽见天下门." forKey:@"introduction"];
             [election setObject:@"B000001" forKey:@"bid"];
-            [election setObject:@"清茶绮香" forKey:@"brandName"];
+            [election setObject:@"清茶绮香" forKey:@"bname"];
             [election setObject:@"张释之" forKey:@"author"];
             [election setObject:@"江苏宜兴" forKey:@"source"];
             [election setObject:@"1016" forKey:@"visitnum"];
@@ -47,9 +47,33 @@
             [array addObject:election];
         }
         [dictionary setObject:array forKey:HTTP_LIST];
-        msg.content = dictionary;
-        [msg.delegate receiveDidFinished:msg];
     }
+    
+    else if (msg.serviceCode == QC_TopBrand_Loading) {
+        
+        NSMutableArray *array = [[NSMutableArray alloc]init];
+        for (int index = 0; index < 4; index++) {
+            NSMutableDictionary *brand = [[NSMutableDictionary alloc]init];
+            // ============= 模拟数据 ================
+            [brand setObject:@"B0000001"   forKey:@"bid"];
+            if (index == 0) {
+                [brand setObject:@"春观夜樱" forKey:@"name"];
+            }else if (index == 1) {
+                [brand setObject:@"夏望星辰" forKey:@"name"];
+            }else if (index == 2) {
+                [brand setObject:@"秋赏明月" forKey:@"name"];
+            }else {
+                [brand setObject:@"冬会白雪" forKey:@"name"];
+            }
+            
+            [brand setObject:@"清茶绮香庚子年一月。紫砂器的泥色有多种，除去主要的朱泥、紫砂泥外，尚有白泥、乌泥、黄泥、松花泥等各种色泽，紫砂器面还具有亚光效果，既可减弱光能的反射，又能清晰地表现器物形态、装饰与自身天然色泽的生动效果。" forKey:@"introduction"];
+            // ============= 模拟数据 ================
+            [array addObject:brand];
+        }
+        [dictionary setObject:array forKey:HTTP_LIST];
+    }
+    msg.content = dictionary;
+    [msg.delegate receiveDidFinished:msg];
 }
 
 @end

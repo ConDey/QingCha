@@ -12,7 +12,6 @@
 @implementation ElectionMessage
 
 - (id)initWithHttpMessage:(HttpMessage *)httpMessage {
-    
     if ((self = [super initWithHttpMessage:httpMessage]) && [self isSuccess]) {
         [self parseTablePaging:httpMessage]; // 解析分页相关参数
         

@@ -12,7 +12,7 @@
 
 - (void)loadingElectionsByPageIndex:(NSInteger)pageIndex pageSize:(NSInteger)pageSize {
     
-    NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
+    NSMutableDictionary *params = [self createPagingParamsByPageIndex:pageIndex pageSize:pageSize];
     HttpMessage *httpmessage = [[HttpMessage alloc]initWithDelegate:self
                                                         postDataDic:params
                                                         serivceCode:QC_Election_PageLoading];

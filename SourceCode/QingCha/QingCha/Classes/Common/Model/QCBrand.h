@@ -18,7 +18,8 @@
 // 品牌名称
 @property (nonatomic,retain) NSString *name;
 
-
+// 品牌介绍
+@property (nonatomic,retain) NSString *introduction;
 
 - (id)initWithDictionary:(NSDictionary *)dict;
 

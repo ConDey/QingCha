@@ -8,9 +8,19 @@
 #import <UIKit/UIKit.h>
 
 #import "ElectionService.h"
+#import "BrandService.h"
+
+#import "BrandView.h"
+#import "BrandPageView.h"
+#import "BrandPageViewCell.h"
 
 // QingCha 首页
 
-@interface HomePageViewController : UIRefreshTableViewController<UITableViewDelegate, UITableViewDataSource,ElectionServiceDelegate>
+@interface HomePageViewController : UIRefreshTableViewController<UITableViewDelegate,
+                                                                 UITableViewDataSource,
+                                                                 BrandPageViewDelegate,
+                                                                 BrandPageViewDataSource,
+                                                                 ElectionServiceDelegate,
+                                                                 BrandServiceDelegate>
 
 @end

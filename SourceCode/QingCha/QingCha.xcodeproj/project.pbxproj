@@ -34,6 +34,17 @@
 		D5D62A7A1C50D09A0036915F /* ElectionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A791C50D09A0036915F /* ElectionMessage.m */; };
 		D5D62A7D1C50D3240036915F /* HttpMsgCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A7C1C50D3240036915F /* HttpMsgCtrl.m */; };
 		D5D62A811C51D0CF0036915F /* NSNumber+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A801C51D0CF0036915F /* NSNumber+Helper.m */; };
+		D5D62A8F1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62A8E1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg */; };
+		D5D62A911C59A10A0036915F /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62A901C59A10A0036915F /* image2.jpg */; };
+		D5D62A9B1C5EE8910036915F /* BrandPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A961C5EE8910036915F /* BrandPageView.m */; };
+		D5D62A9C1C5EE8910036915F /* BrandPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A981C5EE8910036915F /* BrandPageViewCell.m */; };
+		D5D62A9D1C5EE8910036915F /* BrandView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A9A1C5EE8910036915F /* BrandView.m */; };
+		D5D62AA01C5F2ACB0036915F /* BrandService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A9F1C5F2ACB0036915F /* BrandService.m */; };
+		D5D62AA31C5F2B120036915F /* BrandMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AA21C5F2B120036915F /* BrandMessage.m */; };
+		D5D62AAC1C5F34B30036915F /* ArtifactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AAB1C5F34B30036915F /* ArtifactListViewController.m */; };
+		D5D62AAF1C61A1C10036915F /* ArtifactListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AAE1C61A1C10036915F /* ArtifactListViewCell.m */; };
+		D5D62AB21C61DE880036915F /* ArtifactHeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */; };
+		D5D62AB41C61E25F0036915F /* brand_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62AB31C61E25F0036915F /* brand_logo.jpg */; };
 		F60A685D7BDAEDCC60A58432 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F94406E8726717E950A2587 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +108,25 @@
 		D5D62A7C1C50D3240036915F /* HttpMsgCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpMsgCtrl.m; path = Classes/Common/Http/HttpMsgCtrl.m; sourceTree = "<group>"; };
 		D5D62A7F1C51D0CF0036915F /* NSNumber+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Helper.h"; path = "Classes/Common/NSNumber/NSNumber+Helper.h"; sourceTree = "<group>"; };
 		D5D62A801C51D0CF0036915F /* NSNumber+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Helper.m"; path = "Classes/Common/NSNumber/NSNumber+Helper.m"; sourceTree = "<group>"; };
+		D5D62A8E1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Home_Brand_Scroll_Bg.jpg; path = Resources/Image/Home_Brand_Scroll_Bg.jpg; sourceTree = "<group>"; };
+		D5D62A901C59A10A0036915F /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = Resources/Test/image2.jpg; sourceTree = "<group>"; };
+		D5D62A951C5EE8910036915F /* BrandPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandPageView.h; path = Classes/Src/HomePage/BrandPageView.h; sourceTree = "<group>"; };
+		D5D62A961C5EE8910036915F /* BrandPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandPageView.m; path = Classes/Src/HomePage/BrandPageView.m; sourceTree = "<group>"; };
+		D5D62A971C5EE8910036915F /* BrandPageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandPageViewCell.h; path = Classes/Src/HomePage/BrandPageViewCell.h; sourceTree = "<group>"; };
+		D5D62A981C5EE8910036915F /* BrandPageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandPageViewCell.m; path = Classes/Src/HomePage/BrandPageViewCell.m; sourceTree = "<group>"; };
+		D5D62A991C5EE8910036915F /* BrandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandView.h; path = Classes/Src/HomePage/BrandView.h; sourceTree = "<group>"; };
+		D5D62A9A1C5EE8910036915F /* BrandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandView.m; path = Classes/Src/HomePage/BrandView.m; sourceTree = "<group>"; };
+		D5D62A9E1C5F2ACB0036915F /* BrandService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandService.h; path = Classes/Src/HomePage/BrandService.h; sourceTree = "<group>"; };
+		D5D62A9F1C5F2ACB0036915F /* BrandService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandService.m; path = Classes/Src/HomePage/BrandService.m; sourceTree = "<group>"; };
+		D5D62AA11C5F2B120036915F /* BrandMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandMessage.h; path = Classes/Src/HomePage/BrandMessage.h; sourceTree = "<group>"; };
+		D5D62AA21C5F2B120036915F /* BrandMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandMessage.m; path = Classes/Src/HomePage/BrandMessage.m; sourceTree = "<group>"; };
+		D5D62AAA1C5F34B30036915F /* ArtifactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactListViewController.h; path = Classes/Src/Artifacts/ArtifactListViewController.h; sourceTree = "<group>"; };
+		D5D62AAB1C5F34B30036915F /* ArtifactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactListViewController.m; path = Classes/Src/Artifacts/ArtifactListViewController.m; sourceTree = "<group>"; };
+		D5D62AAD1C61A1C10036915F /* ArtifactListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactListViewCell.h; path = Classes/Src/Artifacts/ArtifactListViewCell.h; sourceTree = "<group>"; };
+		D5D62AAE1C61A1C10036915F /* ArtifactListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactListViewCell.m; path = Classes/Src/Artifacts/ArtifactListViewCell.m; sourceTree = "<group>"; };
+		D5D62AB01C61DE880036915F /* ArtifactHeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactHeadViewCell.h; path = Classes/Src/Artifacts/ArtifactHeadViewCell.h; sourceTree = "<group>"; };
+		D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactHeadViewCell.m; path = Classes/Src/Artifacts/ArtifactHeadViewCell.m; sourceTree = "<group>"; };
+		D5D62AB31C61E25F0036915F /* brand_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brand_logo.jpg; path = Resources/Test/brand_logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +222,7 @@
 			children = (
 				D587176D1C4353A60003C2B8 /* StoryBoard */,
 				D58717731C43560C0003C2B8 /* HomePage */,
+				D5D62AA41C5F34010036915F /* Artifacts */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -208,7 +239,6 @@
 		D587176B1C4353940003C2B8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D5D62A7E1C51D0970036915F /* NSNumber */,
 				D5D62A3A1C4F271F0036915F /* Http */,
 				D5D62A331C4F18250036915F /* Protocol */,
 				D5D62A2E1C4E20770036915F /* UIImage */,
@@ -216,6 +246,7 @@
 				D5D62A271C4E17C10036915F /* Model */,
 				D5D62A511C506BB00036915F /* NSString */,
 				D5D62A201C4E152C0036915F /* NSArray */,
+				D5D62A7E1C51D0970036915F /* NSNumber */,
 				D5D62A0E1C4DDEA60036915F /* UITableView */,
 				D58717741C4356A60003C2B8 /* UIViewController */,
 				D5D62A161C4E10120036915F /* Header.h */,
@@ -276,6 +307,10 @@
 			children = (
 				D5D62A061C48CC620036915F /* HomePageGuideView.h */,
 				D5D62A071C48CC620036915F /* HomePageGuideView.m */,
+				D5D62A991C5EE8910036915F /* BrandView.h */,
+				D5D62A9A1C5EE8910036915F /* BrandView.m */,
+				D5D62A951C5EE8910036915F /* BrandPageView.h */,
+				D5D62A961C5EE8910036915F /* BrandPageView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -331,6 +366,8 @@
 			children = (
 				D5D62A301C4E22690036915F /* ElectionViewCell.h */,
 				D5D62A311C4E22690036915F /* ElectionViewCell.m */,
+				D5D62A971C5EE8910036915F /* BrandPageViewCell.h */,
+				D5D62A981C5EE8910036915F /* BrandPageViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -376,6 +413,7 @@
 		D5D62A591C5083420036915F /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62A8E1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg */,
 			);
 			name = Image;
 			sourceTree = "<group>";
@@ -383,6 +421,8 @@
 		D5D62A5A1C5083850036915F /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62AB31C61E25F0036915F /* brand_logo.jpg */,
+				D5D62A901C59A10A0036915F /* image2.jpg */,
 				D5D62A5B1C5083A40036915F /* image1.jpg */,
 			);
 			name = Test;
@@ -391,8 +431,12 @@
 		D5D62A6B1C50AD720036915F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62A9E1C5F2ACB0036915F /* BrandService.h */,
+				D5D62A9F1C5F2ACB0036915F /* BrandService.m */,
 				D5D62A5E1C50A0670036915F /* ElectionService.h */,
 				D5D62A5F1C50A0670036915F /* ElectionService.m */,
+				D5D62AA11C5F2B120036915F /* BrandMessage.h */,
+				D5D62AA21C5F2B120036915F /* BrandMessage.m */,
 				D5D62A781C50D09A0036915F /* ElectionMessage.h */,
 				D5D62A791C50D09A0036915F /* ElectionMessage.m */,
 			);
@@ -406,6 +450,51 @@
 				D5D62A801C51D0CF0036915F /* NSNumber+Helper.m */,
 			);
 			name = NSNumber;
+			sourceTree = "<group>";
+		};
+		D5D62AA41C5F34010036915F /* Artifacts */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62AA61C5F34300036915F /* Controller */,
+				D5D62AA71C5F34390036915F /* View */,
+				D5D62AA91C5F34440036915F /* Cell */,
+				D5D62AA81C5F34400036915F /* Model */,
+			);
+			name = Artifacts;
+			sourceTree = "<group>";
+		};
+		D5D62AA61C5F34300036915F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62AAA1C5F34B30036915F /* ArtifactListViewController.h */,
+				D5D62AAB1C5F34B30036915F /* ArtifactListViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D5D62AA71C5F34390036915F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D5D62AA81C5F34400036915F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D5D62AA91C5F34440036915F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D5D62AB01C61DE880036915F /* ArtifactHeadViewCell.h */,
+				D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */,
+				D5D62AAD1C61A1C10036915F /* ArtifactListViewCell.h */,
+				D5D62AAE1C61A1C10036915F /* ArtifactListViewCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,8 +559,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D587175D1C4335570003C2B8 /* Assets.xcassets in Resources */,
+				D5D62A911C59A10A0036915F /* image2.jpg in Resources */,
+				D5D62AB41C61E25F0036915F /* brand_logo.jpg in Resources */,
 				D58717721C4354270003C2B8 /* Root_Iphone.storyboard in Resources */,
 				D5D62A5C1C5083A50036915F /* image1.jpg in Resources */,
+				D5D62A8F1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +624,8 @@
 			files = (
 				D5D62A1C1C4E124B0036915F /* UITableView+Factory.m in Sources */,
 				D5D62A811C51D0CF0036915F /* NSNumber+Helper.m in Sources */,
+				D5D62AAC1C5F34B30036915F /* ArtifactListViewController.m in Sources */,
+				D5D62AAF1C61A1C10036915F /* ArtifactListViewCell.m in Sources */,
 				D5D62A2D1C4E1EFD0036915F /* QCArtifact.m in Sources */,
 				D58717821C43773F0003C2B8 /* HomePageViewController.m in Sources */,
 				D5D62A581C5074CA0036915F /* UILabel+Factory.m in Sources */,
@@ -539,13 +633,19 @@
 				D58717521C4335570003C2B8 /* main.m in Sources */,
 				D5D62A7A1C50D09A0036915F /* ElectionMessage.m in Sources */,
 				D5D62A501C5066220036915F /* QCElection.m in Sources */,
+				D5D62A9B1C5EE8910036915F /* BrandPageView.m in Sources */,
+				D5D62AB21C61DE880036915F /* ArtifactHeadViewCell.m in Sources */,
 				D5D62A3D1C4F27720036915F /* Http.m in Sources */,
 				D5D62A2A1C4E18120036915F /* QCModel.m in Sources */,
+				D5D62AA31C5F2B120036915F /* BrandMessage.m in Sources */,
 				D5D62A081C48CC620036915F /* HomePageGuideView.m in Sources */,
 				D5D62A711C50B2A30036915F /* QCService.m in Sources */,
 				D587177F1C4376DA0003C2B8 /* UICommonViewController.m in Sources */,
 				D5D62A231C4E15500036915F /* NSArray+Helper.m in Sources */,
+				D5D62A9D1C5EE8910036915F /* BrandView.m in Sources */,
+				D5D62AA01C5F2ACB0036915F /* BrandService.m in Sources */,
 				D5D62A601C50A0670036915F /* ElectionService.m in Sources */,
+				D5D62A9C1C5EE8910036915F /* BrandPageViewCell.m in Sources */,
 				D5D62A4D1C5065990036915F /* QCBrand.m in Sources */,
 				D5D62A1F1C4E12B00036915F /* UITableView+Helper.m in Sources */,
 				D5D62A321C4E22690036915F /* ElectionViewCell.m in Sources */,

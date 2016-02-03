@@ -33,10 +33,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bc2-de-gzg"/>
+                    <connections>
+                        <segue destination="UCC-BB-li3" kind="push" identifier="HomeToArtifactListSegue" id="GtJ-U8-hoU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aar-st-eNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="727" y="371"/>
+        </scene>
+        <!--Artifacts Controller-->
+        <scene sceneID="lXm-is-GHg">
+            <objects>
+                <viewController title="Artifacts Controller" id="UCC-BB-li3" customClass="ArtifactListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TUG-GT-Qzx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HnV-VI-qts"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZq-UE-qbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="371"/>
         </scene>
     </scenes>
 </document>

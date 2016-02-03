@@ -17,6 +17,16 @@
     return self;
 }
 
+// 创建分页请求参数
+- (NSMutableDictionary *)createPagingParamsByPageIndex:(NSInteger)pageIndex pageSize:(NSInteger)pageSize {
+    
+    NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
+    
+    [params setObject:[NSString stringWithFormat: @"%ld", (long)pageIndex] forKey:HTTP_PAGE_INDEX];
+    [params setObject:[NSString stringWithFormat: @"%ld", (long)pageSize] forKey:HTTP_PAGE_SIZE];
+    return params;
+}
+
 #pragma mark HttpResponseDelegate代理方法
 
 - (void)receiveDidFinished:(HttpMessage *)receiveMsg {

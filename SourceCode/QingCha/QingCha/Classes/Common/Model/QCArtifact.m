@@ -27,9 +27,6 @@
         self.author = [dict objectForKey:AUTHOR];
         self.source = [dict objectForKey:SOURCE];
         self.visitnum = [dict objectForKey:VISITNUM];
-        
-        // QCBrand
-        self.brand = [[QCBrand alloc]initWithDictionary:dict];
     }
     return self;
 }
