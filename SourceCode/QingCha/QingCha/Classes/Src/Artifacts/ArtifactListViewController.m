@@ -108,8 +108,11 @@
     }
 
     cell.imageView.image = [UIImage imageNamed:@"image2.jpg"];
-    cell.titleLabel.text = @"夏至未至";
-    cell.introductionLabel.text = @"唐代张籍有诗曰:仙果人间都未有,今朝忽见天下门。唐代张籍有诗曰:仙果人间都未有,今朝忽见天下门。唐代张籍有诗曰:仙果人间都未有,今朝忽见天下门。唐代张籍有诗曰:仙果人间都未有,今朝忽见天下门。";
+    
+    QCArtifact *artifact = [self.artifacts objectAtIndex:index-1]; // 这里-1是因为有headViewCell
+    
+    cell.titleLabel.text = artifact.title;
+    cell.introductionLabel.text = artifact.introduction;
     return cell;
 }
 

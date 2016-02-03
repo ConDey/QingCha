@@ -84,7 +84,7 @@
             // ============= 模拟数据 ================
             [election setObject:@"A0000001"   forKey:@"aid"];
             [election setObject:@"夏至未至，如冬晓寒" forKey:@"title"];
-            [election setObject:@"唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。" forKey:@"introduction"];
+            [election setObject:@"唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。" forKey:@"introduction"];
             [election setObject:@"B000001" forKey:@"bid"];
             [election setObject:@"张释之" forKey:@"author"];
             [election setObject:@"江苏宜兴" forKey:@"source"];

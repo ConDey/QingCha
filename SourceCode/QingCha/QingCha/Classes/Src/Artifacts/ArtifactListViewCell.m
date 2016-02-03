@@ -77,6 +77,7 @@
         _introductionLabel.textColor = UI_INTRODUCTION_COLOR;
         _introductionLabel.numberOfLines = 0;
         _introductionLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        _introductionLabel.textAlignment = NSTextAlignmentJustified;
     }
     return _introductionLabel;
 }
