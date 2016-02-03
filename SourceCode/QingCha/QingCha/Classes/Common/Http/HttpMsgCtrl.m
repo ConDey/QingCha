@@ -27,16 +27,16 @@
     if (msg.serviceCode == QC_Election_PageLoading) {
         
         [dictionary setObject:@"1" forKey:HTTP_CURRENT_PAGE];
-        [dictionary setObject:@"20" forKey:HTTP_TOTAL_COUNT];
+        [dictionary setObject:@"5" forKey:HTTP_TOTAL_COUNT];
         [dictionary setObject:@"1" forKey:HTTP_TOTAL_PAGE];
         
         NSMutableArray *array = [[NSMutableArray alloc]init];
-        for (int index = 0; index < 20; index++) {
+        for (int index = 0; index < 5; index++) {
             NSMutableDictionary *election = [[NSMutableDictionary alloc]init];
             // ============= 模拟数据 ================
             [election setObject:@"E0000001"   forKey:@"eid"];
             [election setObject:@"A0000001"   forKey:@"aid"];
-            [election setObject:@"仙果人间都未有,今朝忽见天下门" forKey:@"title"];
+            [election setObject:@"仙果人间都未有，今朝忽见天下门" forKey:@"title"];
             [election setObject:@"唐代张籍有诗曰:仙果人间都未有,今朝忽见天下门." forKey:@"introduction"];
             [election setObject:@"B000001" forKey:@"bid"];
             [election setObject:@"清茶绮香" forKey:@"bname"];
@@ -72,6 +72,29 @@
         }
         [dictionary setObject:array forKey:HTTP_LIST];
     }
+    
+    else if (msg.serviceCode == QC_Artifacts_Loading) {
+        [dictionary setObject:@"1" forKey:HTTP_CURRENT_PAGE];
+        [dictionary setObject:@"4" forKey:HTTP_TOTAL_COUNT];
+        [dictionary setObject:@"1" forKey:HTTP_TOTAL_PAGE];
+        
+        NSMutableArray *array = [[NSMutableArray alloc]init];
+        for (int index = 0; index < 4; index++) {
+            NSMutableDictionary *election = [[NSMutableDictionary alloc]init];
+            // ============= 模拟数据 ================
+            [election setObject:@"A0000001"   forKey:@"aid"];
+            [election setObject:@"夏至未至，如冬晓寒" forKey:@"title"];
+            [election setObject:@"唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。唐代张籍有诗曰，仙果人间都未有，今朝忽见天下门。" forKey:@"introduction"];
+            [election setObject:@"B000001" forKey:@"bid"];
+            [election setObject:@"张释之" forKey:@"author"];
+            [election setObject:@"江苏宜兴" forKey:@"source"];
+            [election setObject:@"1016" forKey:@"visitnum"];
+            // ============= 模拟数据 ================
+            [array addObject:election];
+        }
+        [dictionary setObject:array forKey:HTTP_LIST];
+    }
+    
     msg.content = dictionary;
     [msg.delegate receiveDidFinished:msg];
 }

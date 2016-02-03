@@ -9,10 +9,12 @@
 #import "UIRefreshTableViewController.h"
 #import "PSCollectionView.h"
 
+#import "ArtifactService.h"
+#import "ArtifactMessage.h"
 
 // 品牌页下的作品列表
 
-@interface ArtifactListViewController : UIRefreshTableViewController<PSCollectionViewDelegate,PSCollectionViewDataSource>
+@interface ArtifactListViewController : UIRefreshTableViewController<PSCollectionViewDelegate,PSCollectionViewDataSource,ArtifactServiceDelegate>
 
 @property (nonatomic,retain) NSString *brandID;    // 品牌ID
 @property (nonatomic,retain) NSString *brandName;  // 品牌名称

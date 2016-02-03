@@ -45,6 +45,8 @@
 		D5D62AAF1C61A1C10036915F /* ArtifactListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AAE1C61A1C10036915F /* ArtifactListViewCell.m */; };
 		D5D62AB21C61DE880036915F /* ArtifactHeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */; };
 		D5D62AB41C61E25F0036915F /* brand_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62AB31C61E25F0036915F /* brand_logo.jpg */; };
+		D5D62AB71C61EC470036915F /* ArtifactService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB61C61EC470036915F /* ArtifactService.m */; };
+		D5D62ABA1C61EC610036915F /* ArtifactMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB91C61EC610036915F /* ArtifactMessage.m */; };
 		F60A685D7BDAEDCC60A58432 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F94406E8726717E950A2587 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +129,10 @@
 		D5D62AB01C61DE880036915F /* ArtifactHeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactHeadViewCell.h; path = Classes/Src/Artifacts/ArtifactHeadViewCell.h; sourceTree = "<group>"; };
 		D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactHeadViewCell.m; path = Classes/Src/Artifacts/ArtifactHeadViewCell.m; sourceTree = "<group>"; };
 		D5D62AB31C61E25F0036915F /* brand_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brand_logo.jpg; path = Resources/Test/brand_logo.jpg; sourceTree = "<group>"; };
+		D5D62AB51C61EC470036915F /* ArtifactService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactService.h; path = Classes/Src/Artifacts/ArtifactService.h; sourceTree = "<group>"; };
+		D5D62AB61C61EC470036915F /* ArtifactService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactService.m; path = Classes/Src/Artifacts/ArtifactService.m; sourceTree = "<group>"; };
+		D5D62AB81C61EC610036915F /* ArtifactMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactMessage.h; path = Classes/Src/Artifacts/ArtifactMessage.h; sourceTree = "<group>"; };
+		D5D62AB91C61EC610036915F /* ArtifactMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactMessage.m; path = Classes/Src/Artifacts/ArtifactMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,10 +439,10 @@
 			children = (
 				D5D62A9E1C5F2ACB0036915F /* BrandService.h */,
 				D5D62A9F1C5F2ACB0036915F /* BrandService.m */,
-				D5D62A5E1C50A0670036915F /* ElectionService.h */,
-				D5D62A5F1C50A0670036915F /* ElectionService.m */,
 				D5D62AA11C5F2B120036915F /* BrandMessage.h */,
 				D5D62AA21C5F2B120036915F /* BrandMessage.m */,
+				D5D62A5E1C50A0670036915F /* ElectionService.h */,
+				D5D62A5F1C50A0670036915F /* ElectionService.m */,
 				D5D62A781C50D09A0036915F /* ElectionMessage.h */,
 				D5D62A791C50D09A0036915F /* ElectionMessage.m */,
 			);
@@ -482,6 +488,10 @@
 		D5D62AA81C5F34400036915F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5D62AB51C61EC470036915F /* ArtifactService.h */,
+				D5D62AB61C61EC470036915F /* ArtifactService.m */,
+				D5D62AB81C61EC610036915F /* ArtifactMessage.h */,
+				D5D62AB91C61EC610036915F /* ArtifactMessage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -641,10 +651,12 @@
 				D5D62A081C48CC620036915F /* HomePageGuideView.m in Sources */,
 				D5D62A711C50B2A30036915F /* QCService.m in Sources */,
 				D587177F1C4376DA0003C2B8 /* UICommonViewController.m in Sources */,
+				D5D62ABA1C61EC610036915F /* ArtifactMessage.m in Sources */,
 				D5D62A231C4E15500036915F /* NSArray+Helper.m in Sources */,
 				D5D62A9D1C5EE8910036915F /* BrandView.m in Sources */,
 				D5D62AA01C5F2ACB0036915F /* BrandService.m in Sources */,
 				D5D62A601C50A0670036915F /* ElectionService.m in Sources */,
+				D5D62AB71C61EC470036915F /* ArtifactService.m in Sources */,
 				D5D62A9C1C5EE8910036915F /* BrandPageViewCell.m in Sources */,
 				D5D62A4D1C5065990036915F /* QCBrand.m in Sources */,
 				D5D62A1F1C4E12B00036915F /* UITableView+Helper.m in Sources */,

@@ -16,7 +16,9 @@
 @interface ArtifactListViewController ()
 
 @property (nonatomic,retain) PSCollectionView *collectionView;
-@property (nonatomic,retain) NSArray *artifacts;
+@property (nonatomic,retain) NSMutableArray *artifacts;
+
+@property (nonatomic,retain) ArtifactService *artifactService;
 
 @end
 
@@ -47,21 +49,36 @@
     return _collectionView;
 }
 
+- (NSMutableArray *)artifacts {
+    if (_artifacts == nil) {
+        _artifacts = [[NSMutableArray alloc]init];
+    }
+    return _artifacts;
+}
+
+- (ArtifactService *)artifactService {
+    if (_artifactService == nil) {
+        _artifactService = [[ArtifactService alloc]init];
+        _artifactService.delegate = self;
+    }
+    return _artifactService;
+}
+
 
 #pragma mark - init View And Data
 
 - (void)initView {
     self.titleOfNav = self.brandName; //设置标题名称
+    self.pageSize = self.view.bounds.size.height / [ArtifactListViewCell height] + 1;
     
     [self.view addSubview:self.collectionView];
-    [self.collectionView reloadData];
 }
 
 
 #pragma mark - Datas
 
 - (void)initData {
-    
+    [self.artifactService loadingArtifactsByPageIndex:1 pageSize:self.pageSize];
 }
 
 
@@ -72,7 +89,7 @@
 }
 
 - (NSInteger)numberOfRowsInCollectionView:(PSCollectionView *)collectionView {
-    return 6 + 1;
+    return [NSArray isArrayNull:self.artifacts] ? 0:[self.artifacts count] + 1;
 }
 
 - (UIView *)collectionView:(PSCollectionView *)collectionView cellForRowAtIndex:(NSInteger)index {
@@ -98,6 +115,20 @@
 
 - (CGFloat)collectionView:(PSCollectionView *)collectionView heightForRowAtIndex:(NSInteger)index {
     return index == 0 ? [ArtifactHeadViewCell height]:[ArtifactListViewCell height];
+}
+
+#pragma mark ArtifactServiceDelegate
+
+- (void)artifactsLoadingFinish:(ArtifactMessage *)message {
+    if ([message isSuccess]) {
+        // 设置分页数据
+        self.currentPage = message.currentPage;
+        self.totalCount = message.totalCount;
+        self.totalPage  = message.totalPage;
+        // 设置作品列表数据
+        [self.artifacts addObjectsFromArray:message.artifacts];
+        [self.collectionView reloadData];
+    }
 }
 
 

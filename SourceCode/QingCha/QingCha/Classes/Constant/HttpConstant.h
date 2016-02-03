@@ -15,6 +15,9 @@ typedef enum {
     QC_Election_PageLoading = 0x0101,  // 加载推荐作品
     QC_TopBrand_Loading     = 0x0102,  // 加载置顶品牌
     
+    // 产品相关服务
+    QC_Artifacts_Loading    = 0x0201,  // 加载产品列表
+    
 } SERVICE_CODE;
 
 // Http返回结果代码枚举

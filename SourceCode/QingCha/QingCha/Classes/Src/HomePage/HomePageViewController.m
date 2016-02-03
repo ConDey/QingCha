@@ -20,7 +20,7 @@
 #define HOME_TABLE_HEIGHT    SCREEN_HEIGHT - STATUS_BAR_HEIGHT - 50.0
 #define HOME_BRAND_HEIGHT    HOME_TABLE_HEIGHT
 
-#define HOME_PAGE_SIZE  20
+#define HOME_PAGE_SIZE  5
 
 @interface HomePageViewController ()
 
