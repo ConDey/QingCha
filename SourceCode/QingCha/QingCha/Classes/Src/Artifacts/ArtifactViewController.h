@@ -10,8 +10,8 @@
 
 // 作品详情页
 
-@interface ArtifactViewController : UIRefreshTableViewController
+@interface ArtifactViewController : UIRefreshTableViewController<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,retain) NSString *ArtifactID;  // 作品ID号
+@property (nonatomic,retain) NSString *artifactID;  // 作品ID号
 
 @end

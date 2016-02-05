@@ -180,7 +180,6 @@
 		D521BCA31C64275C00DD6B44 /* Election */ = {
 			isa = PBXGroup;
 			children = (
-				D521BCB81C64286600DD6B44 /* View */,
 				D521BCB71C64286200DD6B44 /* Cell */,
 				D521BCB61C64285400DD6B44 /* Model */,
 			);
@@ -236,13 +235,6 @@
 				D521BCBE1C64287100DD6B44 /* ElectionViewCell.m */,
 			);
 			name = Cell;
-			sourceTree = "<group>";
-		};
-		D521BCB81C64286600DD6B44 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		D58717441C4335570003C2B8 = {

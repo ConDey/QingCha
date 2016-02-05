@@ -39,6 +39,7 @@
 // 跳转中间字段
 @property (nonatomic,retain) NSString        *brandID;
 @property (nonatomic,retain) NSString        *brandName;
+@property (nonatomic,retain) NSString        *artifactID;
 
 @end
 
@@ -214,6 +215,13 @@
     return [ElectionViewCell height];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    QCElection *election = [self.elections objectAtIndex:indexPath.row];
+    self.artifactID = election.aid;
+    [self performSegueWithIdentifier:@"HomeToArtifactSegue" sender:self];
+}
+
 #pragma mark - BrandPageView :delegate
 
 - (NSInteger)numberOfPageInPageScrollView:(BrandPageView *)brandPageView {
@@ -251,6 +259,10 @@
     if ([segue.identifier isEqualToString:@"HomeToArtifactListSegue"]) {
         [view setValue:self.brandName forKey:@"brandName"];
         [view setValue:self.brandID forKey:@"brandID"];
+    }
+    
+    if ([segue.identifier isEqualToString:@"HomeToArtifactSegue"]) {
+        [view setValue:self.artifactID forKey:@"artifactID"];
     }
     
 }

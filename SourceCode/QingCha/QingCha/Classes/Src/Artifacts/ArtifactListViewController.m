@@ -20,6 +20,8 @@
 
 @property (nonatomic,retain) ArtifactService *artifactService;
 
+@property (nonatomic,retain) NSString *artifactID; // 当前被选中的作品ID
+
 @end
 
 @implementation ArtifactListViewController
@@ -120,6 +122,19 @@
     return index == 0 ? [ArtifactListHeadViewCell height]:[ArtifactListViewCell height];
 }
 
+- (void)collectionView:(PSCollectionView *)collectionView didSelectCell:(PSCollectionViewCell *)cell atIndex:(NSInteger)index {
+    
+    // ------------------------ HEAD CELL -------------------------------
+    if (index == 0) {
+        return;
+    }
+    // ------------------------ HEAD CELL -------------------------------
+    
+    QCArtifact *artifact = [self.artifacts objectAtIndex:index-1];
+    self.artifactID = artifact.aid;
+    [self performSegueWithIdentifier:@"ListToArtifactSegue" sender:self];
+}
+
 #pragma mark ArtifactServiceDelegate
 
 - (void)artifactsLoadingFinish:(ArtifactMessage *)message {
@@ -134,5 +149,16 @@
     }
 }
 
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    UIViewController* view = segue.destinationViewController;
+    
+    if ([segue.identifier isEqualToString:@"ListToArtifactSegue"]) {
+        [view setValue:self.artifactID forKey:@"artifactID"];
+    }
+}
 
 @end
