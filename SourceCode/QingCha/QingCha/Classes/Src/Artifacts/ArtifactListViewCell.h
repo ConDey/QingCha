@@ -8,7 +8,7 @@
 
 #import <PSCollectionView/PSCollectionView.h>
 
-// 品牌下作品列表cell
+// 品牌作品列表cell
 
 @interface ArtifactListViewCell : PSCollectionViewCell
 

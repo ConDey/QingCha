@@ -8,7 +8,7 @@
 
 #import "ArtifactListViewController.h"
 
-#import "ArtifactHeadViewCell.h"
+#import "ArtifactListHeadViewCell.h"
 #import "ArtifactListViewCell.h"
 
 #define COLLECTION_COLS_NUM 2
@@ -85,7 +85,7 @@
 #pragma mark - PSCollectionView Delegate
 
 - (Class)collectionView:(PSCollectionView *)collectionView cellClassForRowAtIndex:(NSInteger)index {
-    return index == 0 ? [ArtifactHeadViewCell class]:[ArtifactListViewCell class];
+    return index == 0 ? [ArtifactListHeadViewCell class]:[ArtifactListViewCell class];
 }
 
 - (NSInteger)numberOfRowsInCollectionView:(PSCollectionView *)collectionView {
@@ -96,7 +96,7 @@
     
     // ------------------------ HEAD CELL -------------------------------
     if (index == 0) {
-        ArtifactHeadViewCell *cell = [[ArtifactHeadViewCell alloc]initWithFrame:CGRectZero];
+        ArtifactListHeadViewCell *cell = [[ArtifactListHeadViewCell alloc]initWithFrame:CGRectZero];
         cell.imageView.image = [UIImage imageNamed:@"brand_logo.jpg"];
         return cell;
     }
@@ -117,7 +117,7 @@
 }
 
 - (CGFloat)collectionView:(PSCollectionView *)collectionView heightForRowAtIndex:(NSInteger)index {
-    return index == 0 ? [ArtifactHeadViewCell height]:[ArtifactListViewCell height];
+    return index == 0 ? [ArtifactListHeadViewCell height]:[ArtifactListViewCell height];
 }
 
 #pragma mark ArtifactServiceDelegate

@@ -35,11 +35,28 @@
                     <navigationItem key="navigationItem" id="bc2-de-gzg"/>
                     <connections>
                         <segue destination="UCC-BB-li3" kind="push" identifier="HomeToArtifactListSegue" id="GtJ-U8-hoU"/>
+                        <segue destination="ghG-St-pn8" kind="push" identifier="HomeToArtifactSegue" id="VG9-zJ-sHf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aar-st-eNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="727" y="371"/>
+        </scene>
+        <!--Artifact Controller-->
+        <scene sceneID="hVk-o6-WFJ">
+            <objects>
+                <viewController title="Artifact Controller" id="ghG-St-pn8" customClass="ArtifactViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpa-lH-GY9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RgZ-OU-ZQA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QtF-hI-RqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="1121"/>
         </scene>
         <!--Artifacts Controller-->
         <scene sceneID="lXm-is-GHg">
@@ -52,10 +69,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="HnV-VI-qts"/>
+                    <connections>
+                        <segue destination="ghG-St-pn8" kind="push" identifier="ListToArtifactSegue" id="jxe-Oe-FtT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZq-UE-qbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1163" y="371"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VG9-zJ-sHf"/>
+    </inferredMetricsTieBreakers>
 </document>

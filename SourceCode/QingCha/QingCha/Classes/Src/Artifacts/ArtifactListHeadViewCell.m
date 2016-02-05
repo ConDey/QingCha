@@ -6,18 +6,18 @@
 //  Copyright © 2016年 QingCha. All rights reserved.
 //
 
-#import "ArtifactHeadViewCell.h"
+#import "ArtifactListHeadViewCell.h"
 
 #define ARTIFACT_CELL_MARGIN   8
 #define CELL_WIDTH  (SCREEN_WIDTH - ARTIFACT_CELL_MARGIN * 3)/2
-#define CELL_HEIGHT (CELL_WIDTH * 5/3)/2
+#define CELL_HEIGHT (CELL_WIDTH * 2)/3
 
 #define IMAGE_VIEW_INDEX_X  0
 #define IMAGE_VIEW_INDEX_Y  0
 #define IMAGE_VIEW_WIDTH    CELL_WIDTH
 #define IMAGE_VIEW_HEIGHT   CELL_HEIGHT
 
-@implementation ArtifactHeadViewCell
+@implementation ArtifactListHeadViewCell
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -54,7 +54,7 @@
 }
 
 + (CGFloat)height {
-    return CELL_HEIGHT;  // 5/3是根据宽度的系数
+    return CELL_HEIGHT;
 }
 
 @end

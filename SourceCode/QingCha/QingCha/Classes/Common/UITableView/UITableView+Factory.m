@@ -12,7 +12,7 @@
 
 + (instancetype)tableView {
     
-    UITableView *_tableView = [[self alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    UITableView *_tableView = [[self alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     
     [_tableView setIndicatorStyle:UIScrollViewIndicatorStyleWhite];
     [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
@@ -32,7 +32,7 @@
 
 + (instancetype)groupTableView {
     
-    UITableView *_tableView = [[self alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    UITableView *_tableView = [[self alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     
     [_tableView setIndicatorStyle:UIScrollViewIndicatorStyleWhite];
     [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
@@ -43,7 +43,6 @@
     _tableView.backgroundView = nil;
     _tableView.sectionHeaderHeight = 0.f;
     _tableView.sectionFooterHeight = 0.f;
-    
     return _tableView;
 }
 

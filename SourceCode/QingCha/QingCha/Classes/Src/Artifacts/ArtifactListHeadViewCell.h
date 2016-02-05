@@ -8,9 +8,9 @@
 
 #import <PSCollectionView/PSCollectionView.h>
 
-// 品牌标题cell
+// 品牌列表标题cell
 
-@interface ArtifactHeadViewCell : PSCollectionViewCell
+@interface ArtifactListHeadViewCell : PSCollectionViewCell
 
 @property (nonatomic,retain) UIImageView *imageView;
 

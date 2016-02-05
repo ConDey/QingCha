@@ -8,7 +8,6 @@
 
 #import "ElectionMessage.h"
 
-
 @implementation ElectionMessage
 
 - (id)initWithHttpMessage:(HttpMessage *)httpMessage {

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D521BCB11C64284500DD6B44 /* BrandMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCA81C64284500DD6B44 /* BrandMessage.m */; };
+		D521BCB21C64284500DD6B44 /* BrandPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCAA1C64284500DD6B44 /* BrandPageView.m */; };
+		D521BCB31C64284500DD6B44 /* BrandPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCAC1C64284500DD6B44 /* BrandPageViewCell.m */; };
+		D521BCB41C64284500DD6B44 /* BrandService.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCAE1C64284500DD6B44 /* BrandService.m */; };
+		D521BCB51C64284500DD6B44 /* BrandView.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCB01C64284500DD6B44 /* BrandView.m */; };
+		D521BCBF1C64287100DD6B44 /* ElectionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCBA1C64287100DD6B44 /* ElectionMessage.m */; };
+		D521BCC01C64287100DD6B44 /* ElectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCBC1C64287100DD6B44 /* ElectionService.m */; };
+		D521BCC11C64287100DD6B44 /* ElectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BCBE1C64287100DD6B44 /* ElectionViewCell.m */; };
+		D56C60891C62E445008071A5 /* ArtifactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56C60881C62E445008071A5 /* ArtifactViewController.m */; };
 		D58717521C4335570003C2B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D58717511C4335570003C2B8 /* main.m */; };
 		D587175D1C4335570003C2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D587175C1C4335570003C2B8 /* Assets.xcassets */; };
 		D58717701C43541C0003C2B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D587176F1C43541C0003C2B8 /* AppDelegate.m */; };
@@ -19,7 +28,6 @@
 		D5D62A231C4E15500036915F /* NSArray+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A221C4E15500036915F /* NSArray+Helper.m */; };
 		D5D62A2A1C4E18120036915F /* QCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A291C4E18120036915F /* QCModel.m */; };
 		D5D62A2D1C4E1EFD0036915F /* QCArtifact.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A2C1C4E1EFD0036915F /* QCArtifact.m */; };
-		D5D62A321C4E22690036915F /* ElectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A311C4E22690036915F /* ElectionViewCell.m */; };
 		D5D62A3D1C4F27720036915F /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A3C1C4F27720036915F /* Http.m */; };
 		D5D62A431C4F35B90036915F /* UIRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A421C4F35B90036915F /* UIRefreshTableViewController.m */; };
 		D5D62A4D1C5065990036915F /* QCBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A4C1C5065990036915F /* QCBrand.m */; };
@@ -27,23 +35,16 @@
 		D5D62A541C506BF60036915F /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A531C506BF60036915F /* NSString+Helper.m */; };
 		D5D62A581C5074CA0036915F /* UILabel+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A571C5074CA0036915F /* UILabel+Factory.m */; };
 		D5D62A5C1C5083A50036915F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62A5B1C5083A40036915F /* image1.jpg */; };
-		D5D62A601C50A0670036915F /* ElectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A5F1C50A0670036915F /* ElectionService.m */; };
 		D5D62A711C50B2A30036915F /* QCService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A701C50B2A30036915F /* QCService.m */; };
 		D5D62A741C50B6010036915F /* HttpMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A731C50B6010036915F /* HttpMessage.m */; };
 		D5D62A771C50D0720036915F /* QCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A761C50D0720036915F /* QCMessage.m */; };
-		D5D62A7A1C50D09A0036915F /* ElectionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A791C50D09A0036915F /* ElectionMessage.m */; };
 		D5D62A7D1C50D3240036915F /* HttpMsgCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A7C1C50D3240036915F /* HttpMsgCtrl.m */; };
 		D5D62A811C51D0CF0036915F /* NSNumber+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A801C51D0CF0036915F /* NSNumber+Helper.m */; };
 		D5D62A8F1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62A8E1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg */; };
 		D5D62A911C59A10A0036915F /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62A901C59A10A0036915F /* image2.jpg */; };
-		D5D62A9B1C5EE8910036915F /* BrandPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A961C5EE8910036915F /* BrandPageView.m */; };
-		D5D62A9C1C5EE8910036915F /* BrandPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A981C5EE8910036915F /* BrandPageViewCell.m */; };
-		D5D62A9D1C5EE8910036915F /* BrandView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A9A1C5EE8910036915F /* BrandView.m */; };
-		D5D62AA01C5F2ACB0036915F /* BrandService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62A9F1C5F2ACB0036915F /* BrandService.m */; };
-		D5D62AA31C5F2B120036915F /* BrandMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AA21C5F2B120036915F /* BrandMessage.m */; };
 		D5D62AAC1C5F34B30036915F /* ArtifactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AAB1C5F34B30036915F /* ArtifactListViewController.m */; };
 		D5D62AAF1C61A1C10036915F /* ArtifactListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AAE1C61A1C10036915F /* ArtifactListViewCell.m */; };
-		D5D62AB21C61DE880036915F /* ArtifactHeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */; };
+		D5D62AB21C61DE880036915F /* ArtifactListHeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB11C61DE880036915F /* ArtifactListHeadViewCell.m */; };
 		D5D62AB41C61E25F0036915F /* brand_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5D62AB31C61E25F0036915F /* brand_logo.jpg */; };
 		D5D62AB71C61EC470036915F /* ArtifactService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB61C61EC470036915F /* ArtifactService.m */; };
 		D5D62ABA1C61EC610036915F /* ArtifactMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D62AB91C61EC610036915F /* ArtifactMessage.m */; };
@@ -54,6 +55,24 @@
 		1AFBC193D3BA17E6B4F4E52A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5863F7479DE3F07254445564 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8F94406E8726717E950A2587 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D521BCA71C64284500DD6B44 /* BrandMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandMessage.h; path = Classes/Src/Brand/BrandMessage.h; sourceTree = "<group>"; };
+		D521BCA81C64284500DD6B44 /* BrandMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandMessage.m; path = Classes/Src/Brand/BrandMessage.m; sourceTree = "<group>"; };
+		D521BCA91C64284500DD6B44 /* BrandPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandPageView.h; path = Classes/Src/Brand/BrandPageView.h; sourceTree = "<group>"; };
+		D521BCAA1C64284500DD6B44 /* BrandPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandPageView.m; path = Classes/Src/Brand/BrandPageView.m; sourceTree = "<group>"; };
+		D521BCAB1C64284500DD6B44 /* BrandPageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandPageViewCell.h; path = Classes/Src/Brand/BrandPageViewCell.h; sourceTree = "<group>"; };
+		D521BCAC1C64284500DD6B44 /* BrandPageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandPageViewCell.m; path = Classes/Src/Brand/BrandPageViewCell.m; sourceTree = "<group>"; };
+		D521BCAD1C64284500DD6B44 /* BrandService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandService.h; path = Classes/Src/Brand/BrandService.h; sourceTree = "<group>"; };
+		D521BCAE1C64284500DD6B44 /* BrandService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandService.m; path = Classes/Src/Brand/BrandService.m; sourceTree = "<group>"; };
+		D521BCAF1C64284500DD6B44 /* BrandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandView.h; path = Classes/Src/Brand/BrandView.h; sourceTree = "<group>"; };
+		D521BCB01C64284500DD6B44 /* BrandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandView.m; path = Classes/Src/Brand/BrandView.m; sourceTree = "<group>"; };
+		D521BCB91C64287100DD6B44 /* ElectionMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionMessage.h; path = Classes/Src/Election/ElectionMessage.h; sourceTree = "<group>"; };
+		D521BCBA1C64287100DD6B44 /* ElectionMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionMessage.m; path = Classes/Src/Election/ElectionMessage.m; sourceTree = "<group>"; };
+		D521BCBB1C64287100DD6B44 /* ElectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionService.h; path = Classes/Src/Election/ElectionService.h; sourceTree = "<group>"; };
+		D521BCBC1C64287100DD6B44 /* ElectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionService.m; path = Classes/Src/Election/ElectionService.m; sourceTree = "<group>"; };
+		D521BCBD1C64287100DD6B44 /* ElectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionViewCell.h; path = Classes/Src/Election/ElectionViewCell.h; sourceTree = "<group>"; };
+		D521BCBE1C64287100DD6B44 /* ElectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionViewCell.m; path = Classes/Src/Election/ElectionViewCell.m; sourceTree = "<group>"; };
+		D56C60871C62E445008071A5 /* ArtifactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactViewController.h; path = Classes/Src/Artifacts/ArtifactViewController.h; sourceTree = "<group>"; };
+		D56C60881C62E445008071A5 /* ArtifactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactViewController.m; path = Classes/Src/Artifacts/ArtifactViewController.m; sourceTree = "<group>"; };
 		D587174D1C4335570003C2B8 /* 清茶绮香.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "清茶绮香.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58717511C4335570003C2B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D587175C1C4335570003C2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,8 +99,6 @@
 		D5D62A291C4E18120036915F /* QCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCModel.m; path = Classes/Common/Model/QCModel.m; sourceTree = "<group>"; };
 		D5D62A2B1C4E1EFD0036915F /* QCArtifact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCArtifact.h; path = Classes/Common/Model/QCArtifact.h; sourceTree = "<group>"; };
 		D5D62A2C1C4E1EFD0036915F /* QCArtifact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCArtifact.m; path = Classes/Common/Model/QCArtifact.m; sourceTree = "<group>"; };
-		D5D62A301C4E22690036915F /* ElectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionViewCell.h; path = Classes/Src/HomePage/ElectionViewCell.h; sourceTree = "<group>"; };
-		D5D62A311C4E22690036915F /* ElectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionViewCell.m; path = Classes/Src/HomePage/ElectionViewCell.m; sourceTree = "<group>"; };
 		D5D62A3B1C4F27720036915F /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Http.h; path = Classes/Common/Http/Http.h; sourceTree = "<group>"; };
 		D5D62A3C1C4F27720036915F /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Http.m; path = Classes/Common/Http/Http.m; sourceTree = "<group>"; };
 		D5D62A411C4F35B90036915F /* UIRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRefreshTableViewController.h; path = Classes/Common/UIViewController/UIRefreshTableViewController.h; sourceTree = "<group>"; };
@@ -95,8 +112,6 @@
 		D5D62A561C5074CA0036915F /* UILabel+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Factory.h"; path = "Classes/Common/UILabel/UILabel+Factory.h"; sourceTree = "<group>"; };
 		D5D62A571C5074CA0036915F /* UILabel+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Factory.m"; path = "Classes/Common/UILabel/UILabel+Factory.m"; sourceTree = "<group>"; };
 		D5D62A5B1C5083A40036915F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = Resources/Test/image1.jpg; sourceTree = "<group>"; };
-		D5D62A5E1C50A0670036915F /* ElectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionService.h; path = Classes/Src/HomePage/ElectionService.h; sourceTree = "<group>"; };
-		D5D62A5F1C50A0670036915F /* ElectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionService.m; path = Classes/Src/HomePage/ElectionService.m; sourceTree = "<group>"; };
 		D5D62A671C50A3F00036915F /* HttpConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HttpConstant.h; path = Classes/Constant/HttpConstant.h; sourceTree = "<group>"; };
 		D5D62A6F1C50B2A30036915F /* QCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCService.h; path = Classes/Common/Model/QCService.h; sourceTree = "<group>"; };
 		D5D62A701C50B2A30036915F /* QCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCService.m; path = Classes/Common/Model/QCService.m; sourceTree = "<group>"; };
@@ -104,30 +119,18 @@
 		D5D62A731C50B6010036915F /* HttpMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpMessage.m; path = Classes/Common/Http/HttpMessage.m; sourceTree = "<group>"; };
 		D5D62A751C50D0720036915F /* QCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCMessage.h; path = Classes/Common/Model/QCMessage.h; sourceTree = "<group>"; };
 		D5D62A761C50D0720036915F /* QCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCMessage.m; path = Classes/Common/Model/QCMessage.m; sourceTree = "<group>"; };
-		D5D62A781C50D09A0036915F /* ElectionMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElectionMessage.h; path = Classes/Src/HomePage/ElectionMessage.h; sourceTree = "<group>"; };
-		D5D62A791C50D09A0036915F /* ElectionMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElectionMessage.m; path = Classes/Src/HomePage/ElectionMessage.m; sourceTree = "<group>"; };
 		D5D62A7B1C50D3240036915F /* HttpMsgCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpMsgCtrl.h; path = Classes/Common/Http/HttpMsgCtrl.h; sourceTree = "<group>"; };
 		D5D62A7C1C50D3240036915F /* HttpMsgCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpMsgCtrl.m; path = Classes/Common/Http/HttpMsgCtrl.m; sourceTree = "<group>"; };
 		D5D62A7F1C51D0CF0036915F /* NSNumber+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Helper.h"; path = "Classes/Common/NSNumber/NSNumber+Helper.h"; sourceTree = "<group>"; };
 		D5D62A801C51D0CF0036915F /* NSNumber+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Helper.m"; path = "Classes/Common/NSNumber/NSNumber+Helper.m"; sourceTree = "<group>"; };
 		D5D62A8E1C570EDF0036915F /* Home_Brand_Scroll_Bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Home_Brand_Scroll_Bg.jpg; path = Resources/Image/Home_Brand_Scroll_Bg.jpg; sourceTree = "<group>"; };
 		D5D62A901C59A10A0036915F /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = Resources/Test/image2.jpg; sourceTree = "<group>"; };
-		D5D62A951C5EE8910036915F /* BrandPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandPageView.h; path = Classes/Src/HomePage/BrandPageView.h; sourceTree = "<group>"; };
-		D5D62A961C5EE8910036915F /* BrandPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandPageView.m; path = Classes/Src/HomePage/BrandPageView.m; sourceTree = "<group>"; };
-		D5D62A971C5EE8910036915F /* BrandPageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandPageViewCell.h; path = Classes/Src/HomePage/BrandPageViewCell.h; sourceTree = "<group>"; };
-		D5D62A981C5EE8910036915F /* BrandPageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandPageViewCell.m; path = Classes/Src/HomePage/BrandPageViewCell.m; sourceTree = "<group>"; };
-		D5D62A991C5EE8910036915F /* BrandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandView.h; path = Classes/Src/HomePage/BrandView.h; sourceTree = "<group>"; };
-		D5D62A9A1C5EE8910036915F /* BrandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandView.m; path = Classes/Src/HomePage/BrandView.m; sourceTree = "<group>"; };
-		D5D62A9E1C5F2ACB0036915F /* BrandService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandService.h; path = Classes/Src/HomePage/BrandService.h; sourceTree = "<group>"; };
-		D5D62A9F1C5F2ACB0036915F /* BrandService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandService.m; path = Classes/Src/HomePage/BrandService.m; sourceTree = "<group>"; };
-		D5D62AA11C5F2B120036915F /* BrandMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandMessage.h; path = Classes/Src/HomePage/BrandMessage.h; sourceTree = "<group>"; };
-		D5D62AA21C5F2B120036915F /* BrandMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandMessage.m; path = Classes/Src/HomePage/BrandMessage.m; sourceTree = "<group>"; };
 		D5D62AAA1C5F34B30036915F /* ArtifactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactListViewController.h; path = Classes/Src/Artifacts/ArtifactListViewController.h; sourceTree = "<group>"; };
 		D5D62AAB1C5F34B30036915F /* ArtifactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactListViewController.m; path = Classes/Src/Artifacts/ArtifactListViewController.m; sourceTree = "<group>"; };
 		D5D62AAD1C61A1C10036915F /* ArtifactListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactListViewCell.h; path = Classes/Src/Artifacts/ArtifactListViewCell.h; sourceTree = "<group>"; };
 		D5D62AAE1C61A1C10036915F /* ArtifactListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactListViewCell.m; path = Classes/Src/Artifacts/ArtifactListViewCell.m; sourceTree = "<group>"; };
-		D5D62AB01C61DE880036915F /* ArtifactHeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactHeadViewCell.h; path = Classes/Src/Artifacts/ArtifactHeadViewCell.h; sourceTree = "<group>"; };
-		D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactHeadViewCell.m; path = Classes/Src/Artifacts/ArtifactHeadViewCell.m; sourceTree = "<group>"; };
+		D5D62AB01C61DE880036915F /* ArtifactListHeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactListHeadViewCell.h; path = Classes/Src/Artifacts/ArtifactListHeadViewCell.h; sourceTree = "<group>"; };
+		D5D62AB11C61DE880036915F /* ArtifactListHeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactListHeadViewCell.m; path = Classes/Src/Artifacts/ArtifactListHeadViewCell.m; sourceTree = "<group>"; };
 		D5D62AB31C61E25F0036915F /* brand_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brand_logo.jpg; path = Resources/Test/brand_logo.jpg; sourceTree = "<group>"; };
 		D5D62AB51C61EC470036915F /* ArtifactService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtifactService.h; path = Classes/Src/Artifacts/ArtifactService.h; sourceTree = "<group>"; };
 		D5D62AB61C61EC470036915F /* ArtifactService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtifactService.m; path = Classes/Src/Artifacts/ArtifactService.m; sourceTree = "<group>"; };
@@ -162,6 +165,84 @@
 				5863F7479DE3F07254445564 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D521BCA21C64275400DD6B44 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				D521BCA61C64283300DD6B44 /* View */,
+				D521BCA51C64282F00DD6B44 /* Cell */,
+				D521BCA41C64282700DD6B44 /* Model */,
+			);
+			name = Brand;
+			sourceTree = "<group>";
+		};
+		D521BCA31C64275C00DD6B44 /* Election */ = {
+			isa = PBXGroup;
+			children = (
+				D521BCB81C64286600DD6B44 /* View */,
+				D521BCB71C64286200DD6B44 /* Cell */,
+				D521BCB61C64285400DD6B44 /* Model */,
+			);
+			name = Election;
+			sourceTree = "<group>";
+		};
+		D521BCA41C64282700DD6B44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D521BCAD1C64284500DD6B44 /* BrandService.h */,
+				D521BCAE1C64284500DD6B44 /* BrandService.m */,
+				D521BCA71C64284500DD6B44 /* BrandMessage.h */,
+				D521BCA81C64284500DD6B44 /* BrandMessage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D521BCA51C64282F00DD6B44 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D521BCAB1C64284500DD6B44 /* BrandPageViewCell.h */,
+				D521BCAC1C64284500DD6B44 /* BrandPageViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		D521BCA61C64283300DD6B44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D521BCA91C64284500DD6B44 /* BrandPageView.h */,
+				D521BCAA1C64284500DD6B44 /* BrandPageView.m */,
+				D521BCAF1C64284500DD6B44 /* BrandView.h */,
+				D521BCB01C64284500DD6B44 /* BrandView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D521BCB61C64285400DD6B44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D521BCB91C64287100DD6B44 /* ElectionMessage.h */,
+				D521BCBA1C64287100DD6B44 /* ElectionMessage.m */,
+				D521BCBB1C64287100DD6B44 /* ElectionService.h */,
+				D521BCBC1C64287100DD6B44 /* ElectionService.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D521BCB71C64286200DD6B44 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D521BCBD1C64287100DD6B44 /* ElectionViewCell.h */,
+				D521BCBE1C64287100DD6B44 /* ElectionViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		D521BCB81C64286600DD6B44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		D58717441C4335570003C2B8 = {
@@ -229,6 +310,8 @@
 				D587176D1C4353A60003C2B8 /* StoryBoard */,
 				D58717731C43560C0003C2B8 /* HomePage */,
 				D5D62AA41C5F34010036915F /* Artifacts */,
+				D521BCA21C64275400DD6B44 /* Brand */,
+				D521BCA31C64275C00DD6B44 /* Election */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -313,10 +396,6 @@
 			children = (
 				D5D62A061C48CC620036915F /* HomePageGuideView.h */,
 				D5D62A071C48CC620036915F /* HomePageGuideView.m */,
-				D5D62A991C5EE8910036915F /* BrandView.h */,
-				D5D62A9A1C5EE8910036915F /* BrandView.m */,
-				D5D62A951C5EE8910036915F /* BrandPageView.h */,
-				D5D62A961C5EE8910036915F /* BrandPageView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -370,10 +449,6 @@
 		D5D62A2F1C4E219A0036915F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D5D62A301C4E22690036915F /* ElectionViewCell.h */,
-				D5D62A311C4E22690036915F /* ElectionViewCell.m */,
-				D5D62A971C5EE8910036915F /* BrandPageViewCell.h */,
-				D5D62A981C5EE8910036915F /* BrandPageViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -437,14 +512,6 @@
 		D5D62A6B1C50AD720036915F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D5D62A9E1C5F2ACB0036915F /* BrandService.h */,
-				D5D62A9F1C5F2ACB0036915F /* BrandService.m */,
-				D5D62AA11C5F2B120036915F /* BrandMessage.h */,
-				D5D62AA21C5F2B120036915F /* BrandMessage.m */,
-				D5D62A5E1C50A0670036915F /* ElectionService.h */,
-				D5D62A5F1C50A0670036915F /* ElectionService.m */,
-				D5D62A781C50D09A0036915F /* ElectionMessage.h */,
-				D5D62A791C50D09A0036915F /* ElectionMessage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -474,6 +541,8 @@
 			children = (
 				D5D62AAA1C5F34B30036915F /* ArtifactListViewController.h */,
 				D5D62AAB1C5F34B30036915F /* ArtifactListViewController.m */,
+				D56C60871C62E445008071A5 /* ArtifactViewController.h */,
+				D56C60881C62E445008071A5 /* ArtifactViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -499,8 +568,8 @@
 		D5D62AA91C5F34440036915F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D5D62AB01C61DE880036915F /* ArtifactHeadViewCell.h */,
-				D5D62AB11C61DE880036915F /* ArtifactHeadViewCell.m */,
+				D5D62AB01C61DE880036915F /* ArtifactListHeadViewCell.h */,
+				D5D62AB11C61DE880036915F /* ArtifactListHeadViewCell.m */,
 				D5D62AAD1C61A1C10036915F /* ArtifactListViewCell.h */,
 				D5D62AAE1C61A1C10036915F /* ArtifactListViewCell.m */,
 			);
@@ -637,30 +706,31 @@
 				D5D62AAC1C5F34B30036915F /* ArtifactListViewController.m in Sources */,
 				D5D62AAF1C61A1C10036915F /* ArtifactListViewCell.m in Sources */,
 				D5D62A2D1C4E1EFD0036915F /* QCArtifact.m in Sources */,
+				D521BCB11C64284500DD6B44 /* BrandMessage.m in Sources */,
+				D521BCBF1C64287100DD6B44 /* ElectionMessage.m in Sources */,
+				D56C60891C62E445008071A5 /* ArtifactViewController.m in Sources */,
 				D58717821C43773F0003C2B8 /* HomePageViewController.m in Sources */,
+				D521BCB51C64284500DD6B44 /* BrandView.m in Sources */,
 				D5D62A581C5074CA0036915F /* UILabel+Factory.m in Sources */,
+				D521BCB31C64284500DD6B44 /* BrandPageViewCell.m in Sources */,
 				D58717701C43541C0003C2B8 /* AppDelegate.m in Sources */,
 				D58717521C4335570003C2B8 /* main.m in Sources */,
-				D5D62A7A1C50D09A0036915F /* ElectionMessage.m in Sources */,
 				D5D62A501C5066220036915F /* QCElection.m in Sources */,
-				D5D62A9B1C5EE8910036915F /* BrandPageView.m in Sources */,
-				D5D62AB21C61DE880036915F /* ArtifactHeadViewCell.m in Sources */,
+				D521BCB41C64284500DD6B44 /* BrandService.m in Sources */,
+				D5D62AB21C61DE880036915F /* ArtifactListHeadViewCell.m in Sources */,
 				D5D62A3D1C4F27720036915F /* Http.m in Sources */,
+				D521BCC01C64287100DD6B44 /* ElectionService.m in Sources */,
+				D521BCB21C64284500DD6B44 /* BrandPageView.m in Sources */,
 				D5D62A2A1C4E18120036915F /* QCModel.m in Sources */,
-				D5D62AA31C5F2B120036915F /* BrandMessage.m in Sources */,
+				D521BCC11C64287100DD6B44 /* ElectionViewCell.m in Sources */,
 				D5D62A081C48CC620036915F /* HomePageGuideView.m in Sources */,
 				D5D62A711C50B2A30036915F /* QCService.m in Sources */,
 				D587177F1C4376DA0003C2B8 /* UICommonViewController.m in Sources */,
 				D5D62ABA1C61EC610036915F /* ArtifactMessage.m in Sources */,
 				D5D62A231C4E15500036915F /* NSArray+Helper.m in Sources */,
-				D5D62A9D1C5EE8910036915F /* BrandView.m in Sources */,
-				D5D62AA01C5F2ACB0036915F /* BrandService.m in Sources */,
-				D5D62A601C50A0670036915F /* ElectionService.m in Sources */,
 				D5D62AB71C61EC470036915F /* ArtifactService.m in Sources */,
-				D5D62A9C1C5EE8910036915F /* BrandPageViewCell.m in Sources */,
 				D5D62A4D1C5065990036915F /* QCBrand.m in Sources */,
 				D5D62A1F1C4E12B00036915F /* UITableView+Helper.m in Sources */,
-				D5D62A321C4E22690036915F /* ElectionViewCell.m in Sources */,
 				D5D62A431C4F35B90036915F /* UIRefreshTableViewController.m in Sources */,
 				D5D62A7D1C50D3240036915F /* HttpMsgCtrl.m in Sources */,
 				D5D62A741C50B6010036915F /* HttpMessage.m in Sources */,
